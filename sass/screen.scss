@@ -50,7 +50,7 @@ body{
 }
 #container{
 	width: 100%;
-	height: 10000px;
+	height: 100%;
 }
 ul.main{
 	width: 100%;
@@ -87,26 +87,36 @@ ul.main li{
 		@include part1-sprite(cld0);
 		width: 1021px;
  		height: 365px;
+ 		left: 50%;
+ 		margin-left: 510px;
 	}
 	.cld1{
  		@include part1-sprite(cld1);
  		width: 766px;
  		height: 289px;
+ 		left: 50%;
+ 		margin-left: 383px;
 	}
 	.cld2{
 		@include part1-sprite(cld2);
 		width: 474px;
  		height: 163px;
+ 		left: 50%;
+ 		margin-left: 237px;
 	}
 	.cld3{
 		@include part1-sprite(cld3);
 		width: 289px;
  		height: 214px;
+ 		left: 50%;
+ 		margin-left: 145px;
 	}
 	.grd{
 		@include part1-sprite(grd);
 		width: 1101px;
  		height: 184px;
+ 		left: 50%;
+ 		margin-left: 550px;
 	}
 	.slg{
 		

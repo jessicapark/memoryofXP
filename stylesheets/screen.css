@@ -122,7 +122,7 @@ body {
 /* line 51, ../sass/screen.scss */
 #container {
   width: 100%;
-  height: 10000px;
+  height: 100%;
 }
 
 /* line 55, ../sass/screen.scss */
@@ -172,28 +172,38 @@ ul.main li {
   background-position: 0 -473px;
   width: 1021px;
   height: 365px;
+  left: 50%;
+  margin-left: 510px;
 }
-/* line 91, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .main .cld1 {
   background-position: 0 -184px;
   width: 766px;
   height: 289px;
+  left: 50%;
+  margin-left: 383px;
 }
-/* line 96, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .main .cld2 {
   background-position: 0 -838px;
   width: 474px;
   height: 163px;
+  left: 50%;
+  margin-left: 237px;
 }
-/* line 101, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .main .cld3 {
   background-position: 0 -1001px;
   width: 289px;
   height: 214px;
+  left: 50%;
+  margin-left: 145px;
 }
-/* line 106, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .main .grd {
   background-position: 0 0;
   width: 1101px;
   height: 184px;
+  left: 50%;
+  margin-left: 550px;
 }
