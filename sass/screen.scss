@@ -9,6 +9,7 @@
 @import "compass/css3/columns";
 @import "compass/support";
 @import "part1/*.png";
+@import "date/*.png";
 
 
 body{
@@ -53,7 +54,7 @@ body{
 	width: 100%;
 	height: 100%;
 	$experimental-support-for-svg: true;
-	@include background-image(linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7));
+	@include background-image(linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7));
 }
 ul.main{
 	width: 100%;
@@ -125,14 +126,12 @@ ul.main li{
  		@include part1-sprite(jg1);
  		width: 1653px;
  		height: 287px;
- 		margin-left: -500px;
  		margin-top: 100px;
 	}
 	.jg2{
 		@include part1-sprite(jg2);
 		width: 1653px;
  		height: 287px;
- 		margin-left: -350px;
  		margin-top: 160px;
 	}
 	.jg3{
@@ -153,14 +152,15 @@ ul.main li{
 		@include part1-sprite(sp1);
 		width: 28px;
  		height: 123px;
- 		margin-top: 230px;
+ 		top: 50%;
  		margin-right: 50px;
+ 		margin-top: 40px;
 	}
 	.sp1machine{
 		@include part1-sprite(sp1machine);
 		width: 793px;
  		height: 177px;
- 		margin-top: 200px;
+ 		top: 40%;
  		margin-right: 70px;
 	}
 	.sp2{
@@ -181,21 +181,21 @@ ul.main li{
 		@include part1-sprite(bird1);
 		width: 130px;
  		height: 133px;
- 		margin-top: 230px;
+ 		top:20%;
  		margin-left: 100px;
 	}
 	.bird2{
 		@include part1-sprite(bird2);
 		width: 108px;
  		height: 271px;
- 		margin-top: 230px;
+ 		top:15%;
  		margin-left: 80px;
 	}
 	.bird3{
 		@include part1-sprite(bird3);
 		width: 417px;
  		height: 140px;
- 		margin-top: 230px;
+ 		top:20%;
 	}
 	.ytb1{
 		@include part1-sprite(ytb1);
@@ -257,7 +257,7 @@ ul.main li{
 	}
 	.ufo{
 		@include part1-sprite(ufo);
-		top: -50px;
+		top: -80px;
 		width: 801px;
 		height: 373px;
 		margin-left: -400px;
@@ -267,17 +267,82 @@ ul.main li{
 		width: 251px;
 		height: 139px;
 		margin-left: -125px;
+		left: 40%;
 	}
-	.tomato2{
-		@include part1-sprite(tomato);
-		width: 251px;
-		height: 139px;
+	.tomato{
+		@include part1-sprite(tomato-db);
+		width: 374px;
+		height: 366px;
+		left: 10%;
 	}
 	.win7{
 		@include part1-sprite(win7);
 		width: 303px;
 		height: 446px;
 		left: 20%;
+	}
+	.capsule{
+		@include part1-sprite(capsule);
+		width: 108px;
+		height: 52px;
+		left: 50%;
+		margin-left: -54px;
+	}
+	.date-2001{
+		@include date-sprite(date-2001);
+		width: 146px;
+		height: 180px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.date-2002{
+		@include date-sprite(date-2002);
+		width: 169px;
+		height: 180px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.date-2004{
+		@include date-sprite(date-2004);
+		width: 168px;
+		height: 180px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.date-2007{
+		@include date-sprite(date-2007);
+		width: 164px;
+		height: 180px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.date-2008{
+		@include date-sprite(date-2008);
+		width: 169px;
+		height: 180px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.date-2009{
+		@include date-sprite(date-2009);
+		width: 163px;
+		height: 180px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.date-2011{
+		@include date-sprite(date-2011);
+		width: 210px;
+		height: 180px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.date-2013{
+		@include date-sprite(date-2013);
+		width: 247px;
+		height: 215px;
+		margin-top: 20px;
+		margin-left: 20px;
 	}
 }
 
