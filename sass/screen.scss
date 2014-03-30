@@ -16,8 +16,6 @@ body{
 	font-family: Courier, 'Hiragino Sans GB', 微软雅黑, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 25px;
-	$experimental-support-for-svg: true;
-	@include background-image(linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7));
 }
 .skrollable {
 	/*
@@ -54,6 +52,8 @@ body{
 #container{
 	width: 100%;
 	height: 100%;
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7));
 }
 ul.main{
 	width: 100%;

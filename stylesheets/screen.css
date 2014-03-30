@@ -68,9 +68,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 250, part1/*.png */
+/* line 258, part1/*.png */
 .part1-sprite, .main .cld0, .main .cld1, .main .cld2, .main .cld3, .main .grd, .main .jg1, .main .jg2, .main .jg3, .main .jg4, .main .sp1, .main .sp1machine, .main .sp2, .main .sp2machine, .main .bird1, .main .bird2, .main .bird3, .main .ytb1, .main .ytb2, .main .jg5, .main .jg6, .main .pctg, .main .vista, .main .moon1, .main .moon2, .main .ufo, .main .tomato1, .main .tomato2, .main .win7 {
-  background: url('../images/part1-s5b249a0ba5.png') no-repeat;
+  background: url('../images/part1-s0359954636.png') no-repeat;
 }
 
 /* line 14, ../sass/screen.scss */
@@ -79,16 +79,9 @@ body {
   font-family: Courier, 'Hiragino Sans GB', 微软雅黑, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 25px;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FhNDUzNSIvPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjMWQzMDQzIi8+PHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiMxZjJmM2QiLz48c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iIzEyM2Y2NyIvPjxzdG9wIG9mZnNldD0iNjUlIiBzdG9wLWNvbG9yPSIjMjMyMzJkIi8+PHN0b3Agb2Zmc2V0PSI4NSUiIHN0b3AtY29sb3I9IiM2ZTUxOTEiLz48c3RvcCBvZmZzZXQ9IjkzJSIgc3RvcC1jb2xvcj0iIzM1NWNhNCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ1OThjNyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aa4535), color-stop(20%, #1d3043), color-stop(40%, #1f2f3d), color-stop(55%, #123f67), color-stop(65%, #23232d), color-stop(85%, #6e5191), color-stop(93%, #355ca4), color-stop(100%, #4598c7));
-  background-image: -webkit-linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7);
-  background-image: -moz-linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7);
-  background-image: -o-linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7);
-  background-image: linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7);
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 .skrollable {
   /*
    * First-level skrollables are positioned relative to window
@@ -100,7 +93,7 @@ body {
   z-index: 100;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 .skrollr-mobile .skrollable {
   /*
   	May cause issues on Android default browser (see #331 on GitHub).
@@ -108,7 +101,7 @@ body {
   position: absolute;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .skrollable .skrollable {
   /*
    * Second-level skrollables are positioned relative their parent skrollable
@@ -116,7 +109,7 @@ body {
   position: absolute;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .skrollable .skrollable .skrollable {
   /*
    * Third-level (and below) skrollables are positioned static
@@ -124,10 +117,17 @@ body {
   position: static;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 #container {
   width: 100%;
   height: 100%;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FhNDUzNSIvPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjMWQzMDQzIi8+PHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiMxZjJmM2QiLz48c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iIzEyM2Y2NyIvPjxzdG9wIG9mZnNldD0iNjUlIiBzdG9wLWNvbG9yPSIjMjMyMzJkIi8+PHN0b3Agb2Zmc2V0PSI4NSUiIHN0b3AtY29sb3I9IiM2ZTUxOTEiLz48c3RvcCBvZmZzZXQ9IjkzJSIgc3RvcC1jb2xvcj0iIzM1NWNhNCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ1OThjNyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aa4535), color-stop(20%, #1d3043), color-stop(40%, #1f2f3d), color-stop(55%, #123f67), color-stop(65%, #23232d), color-stop(85%, #6e5191), color-stop(93%, #355ca4), color-stop(100%, #4598c7));
+  background-image: -webkit-linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7);
+  background-image: -moz-linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7);
+  background-image: -o-linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7);
+  background-image: linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7);
 }
 
 /* line 58, ../sass/screen.scss */
@@ -241,7 +241,7 @@ ul.main li {
 }
 /* line 152, ../sass/screen.scss */
 .main .sp1 {
-  background-position: 0 -6064px;
+  background-position: 0 -6138px;
   width: 28px;
   height: 123px;
   margin-top: 230px;
@@ -257,7 +257,7 @@ ul.main li {
 }
 /* line 166, ../sass/screen.scss */
 .main .sp2 {
-  background-position: 0 -6187px;
+  background-position: 0 -6261px;
   width: 68px;
   height: 118px;
   margin-top: 230px;
@@ -296,14 +296,14 @@ ul.main li {
 }
 /* line 200, ../sass/screen.scss */
 .main .ytb1 {
-  background-position: 0 -5960px;
+  background-position: 0 -6034px;
   width: 72px;
   height: 60px;
   margin-top: 450px;
 }
 /* line 206, ../sass/screen.scss */
 .main .ytb2 {
-  background-position: 0 -6020px;
+  background-position: 0 -6094px;
   width: 53px;
   height: 44px;
   margin-top: 350px;
