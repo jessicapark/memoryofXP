@@ -1,0 +1,284 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/utilities/sprites";
+@import "compass/css3/images";
+@import "compass/css3/columns";
+@import "compass/support";
+@import "part1/*.png";
+
+
+body{
+	color: #fff;
+	font-family: Courier, 'Hiragino Sans GB', 微软雅黑, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 25px;
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(#aa4535, #1d3043 20%, #1f2f3d 40%, #123f67 55%, #23232d 65%, #6e5191 85%, #355ca4 93%, #4598c7));
+}
+.skrollable {
+	/*
+	 * First-level skrollables are positioned relative to window
+	 */
+	position:fixed;
+
+	/*
+	 * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
+	 */
+	z-index:100;
+}
+
+.skrollr-mobile .skrollable {
+	/*
+		May cause issues on Android default browser (see #331 on GitHub).
+	*/
+	position:absolute;
+}
+
+.skrollable .skrollable {
+	/*
+	 * Second-level skrollables are positioned relative their parent skrollable
+	 */
+	position:absolute;
+}
+
+.skrollable .skrollable .skrollable {
+	/*
+	 * Third-level (and below) skrollables are positioned static
+	 */
+	position:static;
+}
+#container{
+	width: 100%;
+	height: 100%;
+}
+ul.main{
+	width: 100%;
+}
+ul.main li{
+	width: 100%;
+	height: 1000px;
+}
+#nav{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+#nav span{
+	display: block;
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+.rocket{
+	background: url(../images/rocket.png) no-repeat;
+	height: 336px;
+	width: 172px;
+	left: 50%;
+	margin-left: -86px;
+}
+
+
+.main {
+	.cld0{
+		@include part1-sprite(cld0);
+		width: 1021px;
+ 		height: 365px;
+ 		left: 50%;
+ 		margin-left: -510px;
+	}
+	.cld1{
+ 		@include part1-sprite(cld1);
+ 		width: 766px;
+ 		height: 289px;
+ 		left: 50%;
+ 		margin-left: -383px;
+	}
+	.cld2{
+		@include part1-sprite(cld2);
+		width: 474px;
+ 		height: 163px;
+ 		left: 50%;
+ 		margin-left: -237px;
+	}
+	.cld3{
+		@include part1-sprite(cld3);
+		width: 289px;
+ 		height: 214px;
+ 		left: 50%;
+ 		margin-left: -145px;
+	}
+	.grd{
+		@include part1-sprite(grd);
+		width: 1101px;
+ 		height: 184px;
+ 		left: 50%;
+ 		margin-left: -550px;
+	}
+
+	.jg1{
+ 		@include part1-sprite(jg1);
+ 		width: 1653px;
+ 		height: 287px;
+ 		margin-left: -500px;
+ 		margin-top: 100px;
+	}
+	.jg2{
+		@include part1-sprite(jg2);
+		width: 1653px;
+ 		height: 287px;
+ 		margin-left: -350px;
+ 		margin-top: 160px;
+	}
+	.jg3{
+		@include part1-sprite(jg3);
+		width: 530px;
+ 		height: 131px;
+ 		left: 0;
+ 		margin-top: 300px;
+	}
+	.jg4{
+		@include part1-sprite(jg4);
+		width: 424px;
+ 		height: 150px;
+ 		right: 0;
+ 		margin-top: 130px;
+	}
+	.sp1{
+		@include part1-sprite(sp1);
+		width: 28px;
+ 		height: 123px;
+ 		margin-top: 230px;
+ 		margin-right: 50px;
+	}
+	.sp1machine{
+		@include part1-sprite(sp1machine);
+		width: 793px;
+ 		height: 177px;
+ 		margin-top: 200px;
+ 		margin-right: 70px;
+	}
+	.sp2{
+		@include part1-sprite(sp2);
+		width: 68px;
+ 		height: 118px;
+ 		margin-top: 230px;
+ 		margin-left: 30px;
+	}
+	.sp2machine{
+		@include part1-sprite(sp2machine);
+		width: 720px;
+ 		height: 290px;
+ 		margin-top: 130px;
+ 		margin-left: 60px;
+	}
+	.bird1{
+		@include part1-sprite(bird1);
+		width: 130px;
+ 		height: 133px;
+ 		margin-top: 230px;
+ 		margin-left: 100px;
+	}
+	.bird2{
+		@include part1-sprite(bird2);
+		width: 108px;
+ 		height: 271px;
+ 		margin-top: 230px;
+ 		margin-left: 80px;
+	}
+	.bird3{
+		@include part1-sprite(bird3);
+		width: 417px;
+ 		height: 140px;
+ 		margin-top: 230px;
+	}
+	.ytb1{
+		@include part1-sprite(ytb1);
+		width: 72px;
+ 		height: 60px;
+ 		margin-top: 450px;
+	}
+	.ytb2{
+		@include part1-sprite(ytb2);
+		width: 53px;
+ 		height: 44px;
+ 		margin-top: 350px;
+ 		margin-right: 80px;
+	}
+	.jg5{
+		@include part1-sprite(jg5);
+		width: 618px;
+ 		height: 257px;
+ 		left: 0;
+ 		margin-top: 300px;
+	}
+	.jg6{
+		@include part1-sprite(jg6);
+		width: 613px;
+ 		height: 221px;
+ 		right: 0;
+ 		margin-top: 130px;
+	}
+	.pctg{
+		@include part1-sprite(pctg);
+		height: 566px;
+		right: 0;
+		bottom: 0;
+	}
+	.pctgline{
+		@include background-image(linear-gradient(#1599b1, #fffb92));
+		height: 100%;
+		width: 1px;
+		right: 0;
+		bottom: 0;
+	}
+	.vista{
+		@include part1-sprite(vista);
+		width: 128px;
+		height: 230px;
+		right: 10%;
+	}
+	.moon1{
+		@include part1-sprite(moon1);
+		width: 253px;
+		height: 205px;
+		left: 10%;
+	}
+	.moon2{
+		@include part1-sprite(moon2);
+		width: 263px;
+		height: 442px;
+		right: 10%;
+	}
+	.ufo{
+		@include part1-sprite(ufo);
+		top: -50px;
+		width: 801px;
+		height: 373px;
+		margin-left: -400px;
+	}
+	.tomato1{
+		@include part1-sprite(tomato);
+		width: 251px;
+		height: 139px;
+		margin-left: -125px;
+	}
+	.tomato2{
+		@include part1-sprite(tomato);
+		width: 251px;
+		height: 139px;
+	}
+	.win7{
+		@include part1-sprite(win7);
+		width: 303px;
+		height: 446px;
+		left: 20%;
+	}
+}
+
+
