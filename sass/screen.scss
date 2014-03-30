@@ -1,0 +1,117 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/utilities/sprites";
+@import "compass/css3/images";
+@import "compass/support";
+
+body{
+	color: #fff;
+	font-family: Courier, 'Hiragino Sans GB', 微软雅黑, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 25px;
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(#23232d, #1d3043 30%, #3d6666 35%, #1f2f3d 45%, #123f67 55%, #aa4535 65%, #34324e 75%, #32509d 90%, #4598c7));
+}
+.skrollable {
+	/*
+	 * First-level skrollables are positioned relative to window
+	 */
+	position:fixed;
+
+	/*
+	 * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
+	 */
+	z-index:100;
+}
+
+.skrollr-mobile .skrollable {
+	/*
+		May cause issues on Android default browser (see #331 on GitHub).
+	*/
+	position:absolute;
+}
+
+.skrollable .skrollable {
+	/*
+	 * Second-level skrollables are positioned relative their parent skrollable
+	 */
+	position:absolute;
+}
+
+.skrollable .skrollable .skrollable {
+	/*
+	 * Third-level (and below) skrollables are positioned static
+	 */
+	position:static;
+}
+#container{
+	width: 100%;
+	height: 10000px;
+}
+ul.main{
+	width: 100%;
+}
+ul.main li{
+	width: 100%;
+	height: 1000px;
+}
+#nav{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+#nav span{
+	display: block;
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+.rocket{
+	background: url(../images/rocket.png) no-repeat;
+	height: 336px;
+	width: 172px;
+	left: 50%;
+	margin-left: -86px;
+}
+
+@import "part1/*.png";
+
+.main {
+	.cld0{
+		@include part1-sprite(cld0);
+		width: 1021px;
+ 		height: 365px;
+	}
+	.cld1{
+ 		@include part1-sprite(cld1);
+ 		width: 766px;
+ 		height: 289px;
+	}
+	.cld2{
+		@include part1-sprite(cld2);
+		width: 474px;
+ 		height: 163px;
+	}
+	.cld3{
+		@include part1-sprite(cld3);
+		width: 289px;
+ 		height: 214px;
+	}
+	.grd{
+		@include part1-sprite(grd);
+		width: 1101px;
+ 		height: 184px;
+	}
+	.slg{
+		
+
+	}
+}
+
+
