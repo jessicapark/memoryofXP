@@ -52,7 +52,7 @@ body{
 }
 #container{
 	width: 100%;
-	height: 100%;
+	height: 16311px;
 	$experimental-support-for-svg: true;
 	@include background-image(linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7));
 }
@@ -123,26 +123,26 @@ ul.main li{
 	}
 
 	.jg1{
- 		background: url(../images/jd1.png) no-repeat;
+ 		background: url(../images/jg1.png) no-repeat;
  		width: 1653px;
  		height: 287px;
  		margin-top: 100px;
 	}
 	.jg2{
-		background: url(../images/jd2.png) no-repeat;
+		background: url(../images/jg2.png) no-repeat;
 		width: 1653px;
  		height: 287px;
  		margin-top: 160px;
 	}
 	.jg3{
-		background: url(../images/jd3.png) no-repeat;
+		background: url(../images/jg3.png) no-repeat;
 		width: 530px;
  		height: 131px;
  		left: 0;
  		margin-top: 300px;
 	}
 	.jg4{
-		background: url(../images/jd4.png) no-repeat;
+		background: url(../images/jg4.png) no-repeat;
 		width: 424px;
  		height: 150px;
  		right: 0;
