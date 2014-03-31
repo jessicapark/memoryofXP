@@ -68,14 +68,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 266, part1/*.png */
-.part1-sprite, .main .cld0, .main .cld1, .main .cld2, .main .cld3, .main .grd, .main .jg1, .main .jg2, .main .jg3, .main .jg4, .main .sp1, .main .sp1machine, .main .sp2, .main .sp2machine, .main .bird1, .main .bird2, .main .bird3, .main .ytb1, .main .ytb2, .main .jg5, .main .jg6, .main .pctg, .main .vista, .main .moon1, .main .moon2, .main .ufo, .main .tomato1, .main .tomato, .main .win7, .main .capsule {
-  background: url('../images/part1-s56c6df6300.png') no-repeat;
-}
-
+/*@import "part1/*.png";*/
 /* line 98, date/*.png */
 .date-sprite, .main .date-2001, .main .date-2002, .main .date-2004, .main .date-2007, .main .date-2008, .main .date-2009, .main .date-2011, .main .date-2013 {
-  background: url('../images/date-s3a66444a01.png') no-repeat;
+  background: url('../images/date-sb1b98852e3.png') no-repeat;
 }
 
 /* line 15, ../sass/screen.scss */
@@ -174,7 +170,7 @@ ul.main li {
 
 /* line 89, ../sass/screen.scss */
 .main .cld0 {
-  background-position: 0 -4781px;
+  background: url(../images/cld0.png) no-repeat;
   width: 1021px;
   height: 365px;
   left: 50%;
@@ -182,7 +178,7 @@ ul.main li {
 }
 /* line 96, ../sass/screen.scss */
 .main .cld1 {
-  background-position: 0 -2829px;
+  background: url(../images/cld1.png) no-repeat;
   width: 766px;
   height: 289px;
   left: 50%;
@@ -190,7 +186,7 @@ ul.main li {
 }
 /* line 103, ../sass/screen.scss */
 .main .cld2 {
-  background-position: 0 -5809px;
+  background: url(../images/cld2.png) no-repeat;
   width: 474px;
   height: 163px;
   left: 50%;
@@ -198,7 +194,7 @@ ul.main li {
 }
 /* line 110, ../sass/screen.scss */
 .main .cld3 {
-  background-position: 0 -6112px;
+  background: url(../images/cld3.png) no-repeat;
   width: 289px;
   height: 214px;
   left: 50%;
@@ -206,29 +202,29 @@ ul.main li {
 }
 /* line 117, ../sass/screen.scss */
 .main .grd {
-  background-position: 0 -1959px;
-  width: 1101px;
-  height: 184px;
+  background: url(../images/grd.png) no-repeat;
+  width: 1836px;
+  height: 268px;
   left: 50%;
-  margin-left: -550px;
+  margin-left: -918px;
 }
 /* line 125, ../sass/screen.scss */
 .main .jg1 {
-  background-position: 0 -1226px;
+  background: url(../images/jd1.png) no-repeat;
   width: 1653px;
   height: 287px;
   margin-top: 100px;
 }
 /* line 131, ../sass/screen.scss */
 .main .jg2 {
-  background-position: 0 -566px;
+  background: url(../images/jd2.png) no-repeat;
   width: 1653px;
   height: 287px;
   margin-top: 160px;
 }
 /* line 137, ../sass/screen.scss */
 .main .jg3 {
-  background-position: 0 -5351px;
+  background: url(../images/jd3.png) no-repeat;
   width: 530px;
   height: 131px;
   left: 0;
@@ -236,7 +232,7 @@ ul.main li {
 }
 /* line 144, ../sass/screen.scss */
 .main .jg4 {
-  background-position: 0 -5482px;
+  background: url(../images/jd4.png) no-repeat;
   width: 424px;
   height: 150px;
   right: 0;
@@ -244,7 +240,7 @@ ul.main li {
 }
 /* line 151, ../sass/screen.scss */
 .main .sp1 {
-  background-position: 0 -6482px;
+  background: url(../images/sp1.png) no-repeat;
   width: 28px;
   height: 123px;
   top: 50%;
@@ -253,7 +249,7 @@ ul.main li {
 }
 /* line 159, ../sass/screen.scss */
 .main .sp1machine {
-  background-position: 0 -5632px;
+  background: url(../images/sp1machine.png) no-repeat;
   width: 793px;
   height: 177px;
   top: 40%;
@@ -261,7 +257,7 @@ ul.main li {
 }
 /* line 166, ../sass/screen.scss */
 .main .sp2 {
-  background-position: 0 -6605px;
+  background: url(../images/sp2.png) no-repeat;
   width: 68px;
   height: 118px;
   margin-top: 230px;
@@ -269,7 +265,7 @@ ul.main li {
 }
 /* line 173, ../sass/screen.scss */
 .main .sp2machine {
-  background-position: 0 -2282px;
+  background: url(../images/sp2machine.png) no-repeat;
   width: 720px;
   height: 290px;
   margin-top: 130px;
@@ -277,7 +273,7 @@ ul.main li {
 }
 /* line 180, ../sass/screen.scss */
 .main .bird1 {
-  background-position: 0 -4648px;
+  background: url(../images/bird1.png) no-repeat;
   width: 130px;
   height: 133px;
   top: 20%;
@@ -285,7 +281,7 @@ ul.main li {
 }
 /* line 187, ../sass/screen.scss */
 .main .bird2 {
-  background-position: 0 -4377px;
+  background: url(../images/bird2.png) no-repeat;
   width: 108px;
   height: 271px;
   top: 15%;
@@ -293,21 +289,21 @@ ul.main li {
 }
 /* line 194, ../sass/screen.scss */
 .main .bird3 {
-  background-position: 0 -5972px;
+  background: url(../images/bird3.png) no-repeat;
   width: 417px;
   height: 140px;
   top: 20%;
 }
 /* line 200, ../sass/screen.scss */
 .main .ytb1 {
-  background-position: 0 -6378px;
+  background: url(../images/ytb1.png) no-repeat;
   width: 72px;
   height: 60px;
   margin-top: 450px;
 }
 /* line 206, ../sass/screen.scss */
 .main .ytb2 {
-  background-position: 0 -6438px;
+  background: url(../images/ytb2.png) no-repeat;
   width: 53px;
   height: 44px;
   margin-top: 350px;
@@ -315,7 +311,7 @@ ul.main li {
 }
 /* line 213, ../sass/screen.scss */
 .main .jg5 {
-  background-position: 0 -2572px;
+  background: url(../images/jg5.png) no-repeat;
   width: 618px;
   height: 257px;
   left: 0;
@@ -323,7 +319,7 @@ ul.main li {
 }
 /* line 220, ../sass/screen.scss */
 .main .jg6 {
-  background-position: 0 -3560px;
+  background: url(../images/jg6.png) no-repeat;
   width: 613px;
   height: 221px;
   right: 0;
@@ -331,85 +327,71 @@ ul.main li {
 }
 /* line 227, ../sass/screen.scss */
 .main .pctg {
-  background-position: 0 0;
+  background: url(../images/pctg.png) no-repeat;
   height: 566px;
   right: 0;
   bottom: 0;
 }
 /* line 233, ../sass/screen.scss */
-.main .pctgline {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE1OTliMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmI5MiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1599b1), color-stop(100%, #fffb92));
-  background-image: -webkit-linear-gradient(#1599b1, #fffb92);
-  background-image: -moz-linear-gradient(#1599b1, #fffb92);
-  background-image: -o-linear-gradient(#1599b1, #fffb92);
-  background-image: linear-gradient(#1599b1, #fffb92);
-  height: 100%;
-  width: 1px;
-  right: 0;
-  bottom: 0;
-}
-/* line 240, ../sass/screen.scss */
 .main .vista {
-  background-position: 0 -4147px;
+  background: url(../images/vista.png) no-repeat;
   width: 128px;
   height: 230px;
   right: 10%;
 }
-/* line 246, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .main .moon1 {
-  background-position: 0 -5146px;
+  background: url(../images/moon1.png) no-repeat;
   width: 253px;
   height: 205px;
   left: 10%;
 }
-/* line 252, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .main .moon2 {
-  background-position: 0 -3118px;
+  background: url(../images/moon2.png) no-repeat;
   width: 263px;
   height: 442px;
   right: 10%;
 }
-/* line 258, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .main .ufo {
-  background-position: 0 -853px;
+  background: url(../images/ufo.png) no-repeat;
   top: -80px;
   width: 801px;
   height: 373px;
   margin-left: -400px;
 }
-/* line 265, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .main .tomato1 {
-  background-position: 0 -2143px;
+  background: url(../images/tomato.png) no-repeat;
   width: 251px;
   height: 139px;
   margin-left: -125px;
   left: 40%;
 }
-/* line 272, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .main .tomato {
-  background-position: 0 -3781px;
+  background: url(../images/tomato-db.png) no-repeat;
   width: 374px;
   height: 366px;
-  left: 10%;
+  right: 10%;
 }
-/* line 278, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .main .win7 {
-  background-position: 0 -1513px;
+  background: url(../images/win7.png) no-repeat;
   width: 303px;
   height: 446px;
-  left: 20%;
+  right: 20%;
 }
-/* line 284, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .main .capsule {
-  background-position: 0 -6326px;
+  background: url(../images/capsule.png) no-repeat;
   width: 108px;
   height: 52px;
   left: 50%;
   margin-left: -54px;
 }
-/* line 291, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .main .date-2001 {
   background-position: 0 -1295px;
   width: 146px;
@@ -417,7 +399,7 @@ ul.main li {
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 298, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .main .date-2002 {
   background-position: 0 -575px;
   width: 169px;
@@ -425,15 +407,15 @@ ul.main li {
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 305, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .main .date-2004 {
-  background-position: 0 -395px;
+  background-position: 0 0;
   width: 168px;
   height: 180px;
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 312, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .main .date-2007 {
   background-position: 0 -755px;
   width: 164px;
@@ -441,15 +423,15 @@ ul.main li {
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 319, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 .main .date-2008 {
-  background-position: 0 -215px;
+  background-position: 0 -395px;
   width: 169px;
   height: 180px;
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 326, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 .main .date-2009 {
   background-position: 0 -935px;
   width: 163px;
@@ -457,7 +439,7 @@ ul.main li {
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 333, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 .main .date-2011 {
   background-position: 0 -1115px;
   width: 210px;
@@ -465,11 +447,24 @@ ul.main li {
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 340, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 .main .date-2013 {
-  background-position: 0 0;
+  background-position: 0 -180px;
   width: 247px;
   height: 215px;
   margin-top: 20px;
   margin-left: 20px;
+}
+/* line 340, ../sass/screen.scss */
+.main .bluescreen {
+  background-color: #2a56e7;
+  width: 100%;
+  height: 100%;
+}
+/* line 344, ../sass/screen.scss */
+.main .bluescreen .text {
+  background: url(../images/bluescreen-text.png) no-repeat;
+  width: 957px;
+  height: 188px;
+  margin: 30px;
 }

@@ -8,7 +8,7 @@
 @import "compass/css3/images";
 @import "compass/css3/columns";
 @import "compass/support";
-@import "part1/*.png";
+/*@import "part1/*.png";*/
 @import "date/*.png";
 
 
@@ -87,69 +87,69 @@ ul.main li{
 
 .main {
 	.cld0{
-		@include part1-sprite(cld0);
+		background: url(../images/cld0.png) no-repeat;
 		width: 1021px;
  		height: 365px;
  		left: 50%;
  		margin-left: -510px;
 	}
 	.cld1{
- 		@include part1-sprite(cld1);
+ 		background: url(../images/cld1.png) no-repeat;
  		width: 766px;
  		height: 289px;
  		left: 50%;
  		margin-left: -383px;
 	}
 	.cld2{
-		@include part1-sprite(cld2);
+		background: url(../images/cld2.png) no-repeat;
 		width: 474px;
  		height: 163px;
  		left: 50%;
  		margin-left: -237px;
 	}
 	.cld3{
-		@include part1-sprite(cld3);
+		background: url(../images/cld3.png) no-repeat;
 		width: 289px;
  		height: 214px;
  		left: 50%;
  		margin-left: -145px;
 	}
 	.grd{
-		@include part1-sprite(grd);
-		width: 1101px;
- 		height: 184px;
+		background: url(../images/grd.png) no-repeat;
+		width: 1836px;
+ 		height: 268px;
  		left: 50%;
- 		margin-left: -550px;
+ 		margin-left: -918px;
 	}
 
 	.jg1{
- 		@include part1-sprite(jg1);
+ 		background: url(../images/jd1.png) no-repeat;
  		width: 1653px;
  		height: 287px;
  		margin-top: 100px;
 	}
 	.jg2{
-		@include part1-sprite(jg2);
+		background: url(../images/jd2.png) no-repeat;
 		width: 1653px;
  		height: 287px;
  		margin-top: 160px;
 	}
 	.jg3{
-		@include part1-sprite(jg3);
+		background: url(../images/jd3.png) no-repeat;
 		width: 530px;
  		height: 131px;
  		left: 0;
  		margin-top: 300px;
 	}
 	.jg4{
-		@include part1-sprite(jg4);
+		background: url(../images/jd4.png) no-repeat;
 		width: 424px;
  		height: 150px;
  		right: 0;
  		margin-top: 130px;
 	}
 	.sp1{
-		@include part1-sprite(sp1);
+		background: url(../images/sp1.png) no-repeat;
 		width: 28px;
  		height: 123px;
  		top: 50%;
@@ -157,132 +157,125 @@ ul.main li{
  		margin-top: 40px;
 	}
 	.sp1machine{
-		@include part1-sprite(sp1machine);
+		background: url(../images/sp1machine.png) no-repeat;
 		width: 793px;
  		height: 177px;
  		top: 40%;
  		margin-right: 70px;
 	}
 	.sp2{
-		@include part1-sprite(sp2);
+		background: url(../images/sp2.png) no-repeat;
 		width: 68px;
  		height: 118px;
  		margin-top: 230px;
  		margin-left: 30px;
 	}
 	.sp2machine{
-		@include part1-sprite(sp2machine);
+		background: url(../images/sp2machine.png) no-repeat;
 		width: 720px;
  		height: 290px;
  		margin-top: 130px;
  		margin-left: 60px;
 	}
 	.bird1{
-		@include part1-sprite(bird1);
+		background: url(../images/bird1.png) no-repeat;
 		width: 130px;
  		height: 133px;
  		top:20%;
  		margin-left: 100px;
 	}
 	.bird2{
-		@include part1-sprite(bird2);
+		background: url(../images/bird2.png) no-repeat;
 		width: 108px;
  		height: 271px;
  		top:15%;
  		margin-left: 80px;
 	}
 	.bird3{
-		@include part1-sprite(bird3);
+		background: url(../images/bird3.png) no-repeat;
 		width: 417px;
  		height: 140px;
  		top:20%;
 	}
 	.ytb1{
-		@include part1-sprite(ytb1);
+		background: url(../images/ytb1.png) no-repeat;
 		width: 72px;
  		height: 60px;
  		margin-top: 450px;
 	}
 	.ytb2{
-		@include part1-sprite(ytb2);
+		background: url(../images/ytb2.png) no-repeat;
 		width: 53px;
  		height: 44px;
  		margin-top: 350px;
  		margin-right: 80px;
 	}
 	.jg5{
-		@include part1-sprite(jg5);
+		background: url(../images/jg5.png) no-repeat;
 		width: 618px;
  		height: 257px;
  		left: 0;
  		margin-top: 300px;
 	}
 	.jg6{
-		@include part1-sprite(jg6);
+		background: url(../images/jg6.png) no-repeat;
 		width: 613px;
  		height: 221px;
  		right: 0;
  		margin-top: 130px;
 	}
 	.pctg{
-		@include part1-sprite(pctg);
+		background: url(../images/pctg.png) no-repeat;
 		height: 566px;
 		right: 0;
 		bottom: 0;
 	}
-	.pctgline{
-		@include background-image(linear-gradient(#1599b1, #fffb92));
-		height: 100%;
-		width: 1px;
-		right: 0;
-		bottom: 0;
-	}
 	.vista{
-		@include part1-sprite(vista);
+		background: url(../images/vista.png) no-repeat;
 		width: 128px;
 		height: 230px;
 		right: 10%;
 	}
 	.moon1{
-		@include part1-sprite(moon1);
+		background: url(../images/moon1.png) no-repeat;
 		width: 253px;
 		height: 205px;
 		left: 10%;
 	}
 	.moon2{
-		@include part1-sprite(moon2);
+		background: url(../images/moon2.png) no-repeat;
 		width: 263px;
 		height: 442px;
 		right: 10%;
 	}
 	.ufo{
-		@include part1-sprite(ufo);
+		background: url(../images/ufo.png) no-repeat;
 		top: -80px;
 		width: 801px;
 		height: 373px;
 		margin-left: -400px;
 	}
 	.tomato1{
-		@include part1-sprite(tomato);
+		background: url(../images/tomato.png) no-repeat;
 		width: 251px;
 		height: 139px;
 		margin-left: -125px;
 		left: 40%;
 	}
 	.tomato{
-		@include part1-sprite(tomato-db);
+		background: url(../images/tomato-db.png) no-repeat;
 		width: 374px;
 		height: 366px;
-		left: 10%;
+		right: 10%;
 	}
 	.win7{
-		@include part1-sprite(win7);
+		background: url(../images/win7.png) no-repeat;
 		width: 303px;
 		height: 446px;
-		left: 20%;
+		right: 20%;
 	}
 	.capsule{
-		@include part1-sprite(capsule);
+		background: url(../images/capsule.png) no-repeat;
 		width: 108px;
 		height: 52px;
 		left: 50%;
@@ -343,6 +336,17 @@ ul.main li{
 		height: 215px;
 		margin-top: 20px;
 		margin-left: 20px;
+	}
+	.bluescreen{
+		background-color: #2a56e7;
+		width: 100%;
+		height: 100%;
+		.text{
+			background: url(../images/bluescreen-text.png) no-repeat;
+			width: 957px;
+			height: 188px;
+			margin: 30px;
+		}
 	}
 }
 
