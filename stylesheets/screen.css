@@ -69,9 +69,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /*@import "part1/*.png";*/
-/* line 98, date/*.png */
-.date-sprite, .main .date-2001, .main .date-2002, .main .date-2004, .main .date-2007, .main .date-2008, .main .date-2009, .main .date-2011, .main .date-2013 {
-  background: url('../images/date-sb1b98852e3.png') no-repeat;
+/* line 106, date/*.png */
+.date-sprite, .main .date-2001, .main .date-2002, .main .date-2004, .main .date-2007, .main .date-2008, .main .date-2008-2, .main .date-2009, .main .date-2011, .main .date-2013 {
+  background: url('../images/date-sdf679af81b.png') no-repeat;
 }
 
 /* line 15, ../sass/screen.scss */
@@ -83,6 +83,26 @@ body {
 }
 
 /* line 21, ../sass/screen.scss */
+.countdown {
+  margin: 30px auto;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 27, ../sass/screen.scss */
+.countdown span {
+  font-family: Arial;
+  display: inline-block;
+  font-size: 20px;
+  color: #EEE;
+  background: #CC1111;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 0px 3px 0px 7px;
+}
+
+/* line 37, ../sass/screen.scss */
 .skrollable {
   /*
    * First-level skrollables are positioned relative to window
@@ -94,7 +114,7 @@ body {
   z-index: 100;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 .skrollr-mobile .skrollable {
   /*
   	May cause issues on Android default browser (see #331 on GitHub).
@@ -102,7 +122,7 @@ body {
   position: absolute;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .skrollable .skrollable {
   /*
    * Second-level skrollables are positioned relative their parent skrollable
@@ -110,7 +130,7 @@ body {
   position: absolute;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .skrollable .skrollable .skrollable {
   /*
    * Third-level (and below) skrollables are positioned static
@@ -118,7 +138,7 @@ body {
   position: static;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 #container {
   width: 100%;
   height: 100%;
@@ -131,18 +151,18 @@ body {
   background-image: linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 ul.main {
   width: 100%;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 ul.main li {
   width: 100%;
   height: 1000px;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 #nav {
   position: fixed;
   left: 0;
@@ -151,7 +171,7 @@ ul.main li {
   height: 100%;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 #nav span {
   display: block;
   float: left;
@@ -159,7 +179,7 @@ ul.main li {
   height: 100%;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .rocket {
   background: url(../images/rocket.png) no-repeat;
   height: 336px;
@@ -168,7 +188,7 @@ ul.main li {
   margin-left: -86px;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .main .cld0 {
   background: url(../images/cld0.png) no-repeat;
   width: 1021px;
@@ -176,7 +196,7 @@ ul.main li {
   left: 50%;
   margin-left: -510px;
 }
-/* line 96, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .main .cld1 {
   background: url(../images/cld1.png) no-repeat;
   width: 766px;
@@ -184,7 +204,7 @@ ul.main li {
   left: 50%;
   margin-left: -383px;
 }
-/* line 103, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .main .cld2 {
   background: url(../images/cld2.png) no-repeat;
   width: 474px;
@@ -192,7 +212,7 @@ ul.main li {
   left: 50%;
   margin-left: -237px;
 }
-/* line 110, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .main .cld3 {
   background: url(../images/cld3.png) no-repeat;
   width: 289px;
@@ -200,7 +220,7 @@ ul.main li {
   left: 50%;
   margin-left: -145px;
 }
-/* line 117, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .main .grd {
   background: url(../images/grd.png) no-repeat;
   width: 1836px;
@@ -208,21 +228,21 @@ ul.main li {
   left: 50%;
   margin-left: -918px;
 }
-/* line 125, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .main .jg1 {
   background: url(../images/jg1.png) no-repeat;
   width: 1653px;
   height: 287px;
   margin-top: 100px;
 }
-/* line 131, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .main .jg2 {
   background: url(../images/jg2.png) no-repeat;
   width: 1653px;
   height: 287px;
   margin-top: 160px;
 }
-/* line 137, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .main .jg3 {
   background: url(../images/jg3.png) no-repeat;
   width: 530px;
@@ -230,7 +250,7 @@ ul.main li {
   left: 0;
   margin-top: 300px;
 }
-/* line 144, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .main .jg4 {
   background: url(../images/jg4.png) no-repeat;
   width: 424px;
@@ -238,7 +258,7 @@ ul.main li {
   right: 0;
   margin-top: 130px;
 }
-/* line 151, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .main .sp1 {
   background: url(../images/sp1.png) no-repeat;
   width: 28px;
@@ -247,7 +267,7 @@ ul.main li {
   margin-right: 50px;
   margin-top: 40px;
 }
-/* line 159, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .main .sp1machine {
   background: url(../images/sp1machine.png) no-repeat;
   width: 793px;
@@ -255,23 +275,41 @@ ul.main li {
   top: 40%;
   margin-right: 70px;
 }
-/* line 166, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .main .sp2 {
   background: url(../images/sp2.png) no-repeat;
   width: 68px;
   height: 118px;
-  margin-top: 230px;
   margin-left: 30px;
+  margin-top: 40px;
 }
-/* line 173, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .main .sp2machine {
   background: url(../images/sp2machine.png) no-repeat;
   width: 720px;
   height: 290px;
-  margin-top: 130px;
+  top: 30%;
+  margin-top: -50px;
   margin-left: 60px;
 }
-/* line 180, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
+.main .sp3 {
+  background: url(../images/sp3.png) no-repeat;
+  width: 75px;
+  height: 266px;
+  margin-left: 30px;
+  margin-top: 0;
+}
+/* line 204, ../sass/screen.scss */
+.main .sp3machine {
+  background: url(../images/sp2machine.png) no-repeat;
+  width: 720px;
+  height: 290px;
+  top: 30%;
+  margin-top: -50px;
+  margin-left: 60px;
+}
+/* line 212, ../sass/screen.scss */
 .main .bird1 {
   background: url(../images/bird1.png) no-repeat;
   width: 130px;
@@ -279,7 +317,7 @@ ul.main li {
   top: 20%;
   margin-left: 100px;
 }
-/* line 187, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .main .bird2 {
   background: url(../images/bird2.png) no-repeat;
   width: 108px;
@@ -287,21 +325,21 @@ ul.main li {
   top: 15%;
   margin-left: 80px;
 }
-/* line 194, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .main .bird3 {
   background: url(../images/bird3.png) no-repeat;
   width: 417px;
   height: 140px;
   top: 20%;
 }
-/* line 200, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .main .ytb1 {
   background: url(../images/ytb1.png) no-repeat;
   width: 72px;
   height: 60px;
   margin-top: 450px;
 }
-/* line 206, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .main .ytb2 {
   background: url(../images/ytb2.png) no-repeat;
   width: 53px;
@@ -309,7 +347,7 @@ ul.main li {
   margin-top: 350px;
   margin-right: 80px;
 }
-/* line 213, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .main .jg5 {
   background: url(../images/jg5.png) no-repeat;
   width: 618px;
@@ -317,7 +355,7 @@ ul.main li {
   left: 0;
   margin-top: 300px;
 }
-/* line 220, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .main .jg6 {
   background: url(../images/jg6.png) no-repeat;
   width: 613px;
@@ -325,35 +363,35 @@ ul.main li {
   right: 0;
   margin-top: 130px;
 }
-/* line 227, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .main .pctg {
   background: url(../images/pctg.png) no-repeat;
   height: 566px;
   right: 0;
   bottom: 0;
 }
-/* line 233, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .main .vista {
   background: url(../images/vista.png) no-repeat;
   width: 128px;
   height: 230px;
-  right: 10%;
+  left: 20%;
 }
-/* line 239, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .main .moon1 {
   background: url(../images/moon1.png) no-repeat;
   width: 253px;
   height: 205px;
   left: 10%;
 }
-/* line 245, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .main .moon2 {
   background: url(../images/moon2.png) no-repeat;
   width: 263px;
   height: 442px;
   right: 10%;
 }
-/* line 251, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .main .ufo {
   background: url(../images/ufo.png) no-repeat;
   top: -80px;
@@ -361,7 +399,7 @@ ul.main li {
   height: 373px;
   margin-left: -400px;
 }
-/* line 258, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 .main .tomato1 {
   background: url(../images/tomato.png) no-repeat;
   width: 251px;
@@ -369,21 +407,21 @@ ul.main li {
   margin-left: -125px;
   left: 40%;
 }
-/* line 265, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .main .tomato {
   background: url(../images/tomato-db.png) no-repeat;
   width: 374px;
   height: 366px;
   right: 10%;
 }
-/* line 271, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 .main .win7 {
   background: url(../images/win7.png) no-repeat;
   width: 303px;
   height: 446px;
   right: 20%;
 }
-/* line 277, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .main .capsule {
   background: url(../images/capsule.png) no-repeat;
   width: 108px;
@@ -391,88 +429,123 @@ ul.main li {
   left: 50%;
   margin-left: -54px;
 }
-/* line 284, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .main .date-2001 {
-  background-position: 0 -1295px;
+  background-position: 0 -1477px;
   width: 146px;
   height: 180px;
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 291, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 .main .date-2002 {
-  background-position: 0 -575px;
+  background-position: 0 -937px;
   width: 169px;
   height: 180px;
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 298, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 .main .date-2004 {
-  background-position: 0 0;
+  background-position: 0 -397px;
   width: 168px;
   height: 180px;
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 305, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 .main .date-2007 {
-  background-position: 0 -755px;
+  background-position: 0 0;
   width: 164px;
-  height: 180px;
+  height: 217px;
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 312, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .main .date-2008 {
-  background-position: 0 -395px;
+  background-position: 0 -217px;
   width: 169px;
   height: 180px;
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 319, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
+.main .date-2008-2 {
+  background-position: 0 -757px;
+  width: 164px;
+  height: 180px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* line 358, ../sass/screen.scss */
 .main .date-2009 {
-  background-position: 0 -935px;
+  background-position: 0 -1117px;
   width: 163px;
   height: 180px;
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 326, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 .main .date-2011 {
-  background-position: 0 -1115px;
+  background-position: 0 -1297px;
   width: 210px;
   height: 180px;
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 333, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 .main .date-2013 {
-  background-position: 0 -180px;
-  width: 247px;
-  height: 215px;
+  background-position: 0 -577px;
+  width: 302px;
+  height: 180px;
   margin-top: 20px;
   margin-left: 20px;
 }
-/* line 340, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .main .bluescreen {
   background-color: #2a56e7;
   width: 100%;
   height: 100%;
 }
-/* line 344, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
 .main .bluescreen .text {
   background: url(../images/bluescreen-text.png) no-repeat;
   width: 957px;
   height: 188px;
   margin: 30px;
 }
-/* line 351, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 .main .table {
   background: url(../images/table.png) no-repeat;
   width: 1377px;
   height: 368px;
   left: 50%;
   margin-left: -690px;
+}
+/* line 397, ../sass/screen.scss */
+.main .winlogo {
+  background: url(../images/winlogo.png) no-repeat;
+  width: 189px;
+  height: 150px;
+  left: 50%;
+  margin-left: -95px;
+  top: 30%;
+}
+/* line 405, ../sass/screen.scss */
+.main .loadinggif {
+  background: url(../images/loadinggif.gif) no-repeat;
+  width: 159px;
+  height: 23px;
+  left: 50%;
+  margin-left: -80px;
+  top: 60%;
+}
+/* line 413, ../sass/screen.scss */
+.main .cmt0 {
+  background: url(../images/cmt0.png) no-repeat;
+  width: 385px;
+  height: 68px;
+  top: 20%;
+  left: 50%;
+  margin-left: -193px;
 }

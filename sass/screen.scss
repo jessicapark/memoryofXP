@@ -18,6 +18,22 @@ body{
 	-webkit-font-smoothing: antialiased;
 	font-size: 25px;
 }
+.countdown {
+	margin: 30px auto;
+	color: #333;
+	font-size: 20px;
+	font-weight: bold;
+}
+.countdown span {
+	font-family: Arial;
+	display: inline-block;
+	font-size: 20px;
+	color: #EEE;
+	background: #CC1111;
+	padding: 15px;
+	border-radius: 5px;
+	margin: 0px 3px 0px 7px;
+}
 .skrollable {
 	/*
 	 * First-level skrollables are positioned relative to window
@@ -167,14 +183,30 @@ ul.main li{
 		background: url(../images/sp2.png) no-repeat;
 		width: 68px;
  		height: 118px;
- 		margin-top: 230px;
  		margin-left: 30px;
+ 		margin-top: 40px;
 	}
 	.sp2machine{
 		background: url(../images/sp2machine.png) no-repeat;
 		width: 720px;
  		height: 290px;
- 		margin-top: 130px;
+ 		top: 30%;
+ 		margin-top: -50px;
+ 		margin-left: 60px;
+	}
+	.sp3{
+		background: url(../images/sp3.png) no-repeat;
+		width: 75px;
+ 		height: 266px;
+ 		margin-left: 30px;
+ 		margin-top: 0;
+	}
+	.sp3machine{
+		background: url(../images/sp2machine.png) no-repeat;
+		width: 720px;
+ 		height: 290px;
+ 		top: 30%;
+ 		margin-top: -50px;
  		margin-left: 60px;
 	}
 	.bird1{
@@ -234,7 +266,7 @@ ul.main li{
 		background: url(../images/vista.png) no-repeat;
 		width: 128px;
 		height: 230px;
-		right: 10%;
+		left: 20%;
 	}
 	.moon1{
 		background: url(../images/moon1.png) no-repeat;
@@ -305,13 +337,20 @@ ul.main li{
 	.date-2007{
 		@include date-sprite(date-2007);
 		width: 164px;
-		height: 180px;
+		height: 217px;
 		margin-top: 20px;
 		margin-left: 20px;
 	}
 	.date-2008{
 		@include date-sprite(date-2008);
 		width: 169px;
+		height: 180px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.date-2008-2{
+		@include date-sprite(date-2008-2);
+		width: 164px;
 		height: 180px;
 		margin-top: 20px;
 		margin-left: 20px;
@@ -332,8 +371,8 @@ ul.main li{
 	}
 	.date-2013{
 		@include date-sprite(date-2013);
-		width: 247px;
-		height: 215px;
+		width: 302px;
+		height: 180px;
 		margin-top: 20px;
 		margin-left: 20px;
 	}
@@ -354,6 +393,30 @@ ul.main li{
 		height: 368px;
 		left: 50%;
 		margin-left: -690px;
+	}
+	.winlogo{
+		background: url(../images/winlogo.png) no-repeat;
+		width: 189px;
+		height: 150px;
+		left: 50%;
+		margin-left: -95px;
+		top: 30%;
+	}
+	.loadinggif{
+		background: url(../images/loadinggif.gif) no-repeat;
+		width: 159px;
+		height: 23px;
+		left: 50%;
+		margin-left: -80px;
+		top: 60%;
+	}
+	.cmt0{
+		background: url(../images/cmt0.png) no-repeat;
+		width: 385px;
+		height: 68px;
+		top: 20%;
+		left: 50%;
+		margin-left:-193px;
 	}
 }
 
