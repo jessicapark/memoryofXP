@@ -52,7 +52,7 @@ body{
 }
 #container{
 	width: 100%;
-	height: 16311px;
+	height: 100%;
 	$experimental-support-for-svg: true;
 	@include background-image(linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7));
 }
@@ -347,6 +347,13 @@ ul.main li{
 			height: 188px;
 			margin: 30px;
 		}
+	}
+	.table{
+		background: url(../images/table.png) no-repeat;
+		width: 1377px;
+		height: 368px;
+		left: 50%;
+		margin-left: -690px;
 	}
 }
 
