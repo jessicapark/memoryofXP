@@ -1,4 +1,4 @@
-@charset "UTF-8";
+  @charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -121,7 +121,7 @@ body {
   /*
    * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
    */
-  z-index: 100;
+  z-index: 102;
 }
 
 /* line 57, ../sass/screen.scss */
@@ -238,11 +238,24 @@ ul.main li {
   left: 50%;
   margin-left: -918px;
 }
+
 /* line 149, ../sass/screen.scss */
 .main .jg1 {
   background: url(../images/jg1.png) no-repeat;
   width: 1653px;
   height: 287px;
+  margin-top: 100px;
+}
+.main .bg1 {
+  background: url(../images/bg01.png) no-repeat;
+  width: 1653px;
+  height: 663px;
+  margin-top: 100px;
+}
+.main .bg2 {
+  background: url(../images/bg02.png) no-repeat;
+  width: 1653px;
+  height: 663px;
   margin-top: 100px;
 }
 /* line 155, ../sass/screen.scss */
@@ -563,6 +576,18 @@ ul.main li {
   height: 135px;
   left: 20%;
 }
+.main .float3 {
+  background: url(../images/float_people.png) no-repeat;
+  width: 190px;
+  height: 201px;
+  left: 30%;
+}
+.main .float4 {
+  background: url(../images/float_people02.png) no-repeat;
+  width: 190px;
+  height: 201px;
+  left: 50%;
+}
 /* line 432, ../sass/screen.scss */
 .main .float2 {
   background: url(../images/float.png) no-repeat;
@@ -677,12 +702,15 @@ ul.main li {
   height: 188px;
   margin-left: 3px;
   position: absolute;
+  z-index: 101;
 }
 /* line 533, ../sass/screen.scss */
 .main .bling {
   background: url(../images/bling.png) no-repeat;
   width: 107px;
   height: 57px;
+  position: absolute;
+  z-index: 102;
 }
 /* line 538, ../sass/screen.scss */
 .main .win98 {
