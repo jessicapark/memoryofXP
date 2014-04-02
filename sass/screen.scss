@@ -20,16 +20,24 @@ body{
 }
 .countdown {
 	margin: 30px auto;
-	color: #333;
+	color: #bbc8d9;
 	font-size: 20px;
 	font-weight: bold;
+	left: 50%;
+	width: 588px;
+	margin-left: -294px;
+}
+.countdown .jl{
+	background: url(../images/jl.png) no-repeat;
+	width: 473px;
+ 	height: 25px;
+ 	margin: 0 auto;
 }
 .countdown span {
 	font-family: Arial;
 	display: inline-block;
-	font-size: 20px;
-	color: #EEE;
-	background: #CC1111;
+	font-size: 50px;
+	color: #3183e6;
 	padding: 15px;
 	border-radius: 5px;
 	margin: 0px 3px 0px 7px;
@@ -93,7 +101,7 @@ ul.main li{
 	height: 100%;
 }
 .rocket{
-	background: url(../images/rocket.png) no-repeat;
+	/*background: url(../images/rocket.png) no-repeat;*/
 	height: 336px;
 	width: 172px;
 	left: 50%;
@@ -387,12 +395,60 @@ ul.main li{
 			margin: 30px;
 		}
 	}
+	.jgend{
+		background: url(../images/jgend.png) no-repeat;
+		width: 1280px;
+		height: 326px;
+		left: 50%;
+		margin-left: -640px;
+	}
+	.star{
+		background: url(../images/star.png) no-repeat;
+		width: 1013px;
+		height: 313px;
+		left: 50%;
+		margin-left: -500px;
+	}
+	.footer{
+		background: url(../images/footer.png) no-repeat;
+		width: 1073px;
+		height: 250px;
+		left: 50%;
+		margin-left: -530px;
+	}
+	.hellobye{
+		background: url(../images/hellobye.png) no-repeat;
+		width: 436px;
+		height: 42px;
+		left: 50%;
+		margin-left: -218px;
+	}
+	.float{
+		background: url(../images/float.png) no-repeat;
+		width: 127px;
+		height: 135px;
+		left: 20%;
+	}
+	.float2{
+		background: url(../images/float.png) no-repeat;
+		width: 127px;
+		height: 135px;
+		right: 20%;
+	}
 	.table{
 		background: url(../images/table.png) no-repeat;
 		width: 1377px;
 		height: 368px;
 		left: 50%;
-		margin-left: -690px;
+		margin-left: -695px;
+	}
+	.table-box{
+		background: url(../images/box.png) no-repeat;
+		width: 170px;
+		height: 252px;
+		left: 50%;
+		margin-left: -88px;
+		margin-top: -19px;
 	}
 	.winlogo{
 		background: url(../images/winlogo.png) no-repeat;
@@ -417,6 +473,73 @@ ul.main li{
 		top: 20%;
 		left: 50%;
 		margin-left:-193px;
+	}
+	.hh1{
+		background: url(../images/hh1.png) no-repeat;
+		width: 29px;
+		height: 40px;
+		margin-top: 50px;
+		margin-left: 90px;
+	}
+	.hh2{
+		background: url(../images/hh2.png) no-repeat;
+		width: 44px;
+		height: 17px;
+		margin-top: 88px;
+		margin-left: 98px;
+	}
+	.hh3{
+		background: url(../images/hh3.png) no-repeat;
+		width: 11px;
+		height: 27px;
+		margin-top: 88px;
+		margin-left: 65px;
+	}
+	.hh4{
+		background: url(../images/hh4.png) no-repeat;
+		width: 39px;
+		height: 21px;
+		margin-top: 18px;
+		margin-left: 42px;
+	}
+	.hh5{
+		background: url(../images/hh5.png) no-repeat;
+		width: 91px;
+		height: 60px;
+		margin-top: 98px;
+		margin-left: 38px;
+	}
+	.ie6{
+		background: url(../images/ie6.png) no-repeat;
+		width: 41px;
+		height: 122px;
+		margin-top: 109px;
+		margin-left: 15px;
+	}
+	.fire{
+		background: url(../images/fire.png) no-repeat;
+		width: 172px;
+		height: 154px;
+		margin-top: 159px;
+		margin-left: 0px;
+	}
+	.rocket2{
+		background: url(../images/rocket-2.png) no-repeat;
+		width: 164px;
+		height: 188px;
+		margin-left: 3px;
+		position: absolute;
+	}
+	.bling{
+		background: url(../images/bling.png) no-repeat;
+		width: 107px;
+		height: 57px;
+	}
+	.win98{
+		background: url(../images/win98.png) no-repeat;
+		width: 71px;
+		height: 168px;
+		right: 30%;
 	}
 }
 

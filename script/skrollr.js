@@ -230,6 +230,8 @@
 
 		_instance = this;
 
+		window.superMagic = this;
+
 		options = options || {};
 
 		_constants = options.constants || {};
@@ -778,7 +780,6 @@
 					}
 
 					duration = duration * (1 - targetRatio);
-
 					_instance.animateTo((targetTop + 0.5) | 0, {easing: 'outCubic', duration: duration});
 					break;
 			}

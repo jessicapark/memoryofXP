@@ -30,4 +30,7 @@
 			n += time;
 			m += preImgLen;
 		},100);
+	$(".start").click(function(){ 
+        $.scrollTo(0,0); 
+    }); 
 });
