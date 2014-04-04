@@ -197,7 +197,25 @@ ul.main li {
   left: 50%;
   margin-left: -86px;
 }
-
+.start{
+  background: url(../images/start.png) no-repeat;
+  width: 291px;
+  height: 170px;
+  left: 70%;
+}
+#gototop{
+  margin-left: 131px;
+  margin-top: 11px;
+  position: absolute;
+}
+.scroll{
+  background: url(../images/scroll.png) no-repeat;
+  width: 39px;
+  height: 24px;
+  left: 50%;
+  margin-left: -20px;
+  top: 20px;
+}
 /* line 113, ../sass/screen.scss */
 .main .cld0 {
   background: url(../images/cld0.png) no-repeat;
@@ -328,7 +346,7 @@ ul.main li {
   background: url(../images/sp2machine.png) no-repeat;
   width: 720px;
   height: 290px;
-  top: 30%;
+  top: 40%;
   margin-top: -50px;
   margin-left: 60px;
 }
@@ -523,6 +541,12 @@ ul.main li {
   height: 180px;
   margin-top: 20px;
   margin-left: 20px;
+}.main .date-2014 {
+  background: url(../images/date/date-2014.png) no-repeat;
+  width: 296px;
+  height: 181px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 /* line 387, ../sass/screen.scss */
 .main .bluescreen {
@@ -588,12 +612,28 @@ ul.main li {
   height: 201px;
   left: 50%;
 }
+
 /* line 432, ../sass/screen.scss */
 .main .float2 {
   background: url(../images/float.png) no-repeat;
   width: 127px;
   height: 135px;
   right: 20%;
+}
+.main .virus1 {
+  background: url(../images/virus1.png) no-repeat;
+  width: 109px;
+  height: 299px;
+}
+.main .virus2 {
+  background: url(../images/virus2.png) no-repeat;
+  width: 148px;
+  height: 128px;
+}
+.main .virus3 {
+  background: url(../images/virus3.png) no-repeat;
+  width: 109px;
+  height: 299px;
 }
 /* line 438, ../sass/screen.scss */
 .main .table {
@@ -606,11 +646,11 @@ ul.main li {
 /* line 445, ../sass/screen.scss */
 .main .table-box {
   background: url(../images/box.png) no-repeat;
-  width: 170px;
-  height: 252px;
+  width: 230px;
+  height: 311px;
   left: 50%;
-  margin-left: -88px;
-  margin-top: -19px;
+  margin-left: -115px;
+  margin-top: -80px;
 }
 /* line 453, ../sass/screen.scss */
 .main .winlogo {
@@ -707,10 +747,11 @@ ul.main li {
 /* line 533, ../sass/screen.scss */
 .main .bling {
   background: url(../images/bling.png) no-repeat;
-  width: 107px;
-  height: 57px;
+  width: 22px;
+  height: 35px;
   position: absolute;
   z-index: 102;
+  margin-left: 50px;
 }
 /* line 538, ../sass/screen.scss */
 .main .win98 {

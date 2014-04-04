@@ -3,15 +3,78 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5"/>
+	<style type="text/css">
+		#loading {
+			overflow: none;
+		  z-index: 99999;
+		  width: 100%;
+		  height: 100%;
+		  position: fixed;
+		  background-size: 100%;
+		  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #355ca4), color-stop(100%, #4598c7));
+		  background-image: -webkit-linear-gradient(#355ca4 , #4598c7);
+		  background-image: -moz-linear-gradient(#355ca4, #4598c7);
+		  background-image: -o-linear-gradient(#355ca4, #4598c7);
+		  background-image: linear-gradient(#355ca4, #4598c7);
+		}
+		.winlogo{
+		  background: url(images/winlogo.png) no-repeat;
+		  width: 189px;
+		  height: 150px;
+		  position: fixed;
+		  left: 50%;
+		  margin-left: -95px;
+		  top: 30%;
+		}
+		.loadinggif{
+		  background: url(images/loadinggif.gif) no-repeat;
+		  width: 159px;
+		  height: 23px;
+		  position: fixed;
+		  left: 50%;
+		  margin-left: -80px;
+		  top: 60%;
+		}	
+		#loadingword{
+		  position: fixed;
+		  left: 50%;
+		  margin-left: -20px;
+		  top: 70%;
+		}								
+		@media screen and (max-width: 640px) {
+		   	#loading {
+			  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #17161c), color-stop(30%, #222129), color-stop(45%, #23232d), color-stop(60%, #123f67), color-stop(70%, #6e5191), color-stop(85%, #355ca4), color-stop(100%, #4598c7));
+			  background-image: -webkit-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
+			  background-image: -moz-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
+			  background-image: -o-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
+			  background-image: linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
+			}
+			.start{
+				display: none;
+			}
+			.watch_more{
+				display: none;
+			}
+			.countdown span{
+				padding: 15px 5px;
+				margin: 0px 0px 0px 7px;
+			}	
+		}
+	</style>
 	
 </head>
 <body>
+    <div id="loading">
+			<div class="winlogo"></div>
+			<div class="loadinggif"></div>
+			<div id="loadingword"></div>
+    </div>	
+    <div id="scrolltotop" style="position:absolute;width:1px;height:1px;top:0px;"></div>
+     <div id="scrolltobottom" style="position:absolute;width:1px;height:1px;bottom:0px;"></div>
 	<div id="container">
-		
 		<div class="main">
-	
 			<div class="countdown" data-0="top:10%;" data-1000="top:-100%;">
-				<div class="jl"></div>
+				<div id="jl" class="jl"></div>
 			<center>
 				<span id="zdays"class="days">00</span> 天
 				<span id="zhours" class="hours">00</span> 小时
@@ -21,22 +84,25 @@
 			</div>
 
 			<div class="win98" data-17000="top:100%;" data-19000="top:-100%;"></div>
+			<div class="scroll" data-18500="opacity:0;" data-19000="opacity:1;" ></div>
+			<div class="cld0" data-17700="opacity:1;bottom:-367px" data-19000="opacity:1;bottom:50px" data-19300="opacity:1;bottom:75px" data-19500="opacity:0;bottom:25px;"></div>
+			<div class="cld1" data-17800="opacity:1;bottom:-390px" data-19000="opacity:1;bottom:90px" data-19300="opacity:1;bottom:115px" data-19500="opacity:0;bottom:100px;"></div>
 
-			<div class="cld0" data-17700="opacity:1;bottom:-367px" data-19000="opacity:1;bottom:75px" data-19300="opacity:1;bottom:75px" data-19500="opacity:0;bottom:25px;"></div>
-			<div class="cld1" data-17800="opacity:1;bottom:-390px" data-19000="opacity:1;bottom:115px" data-19300="opacity:1;bottom:115px" data-19500="opacity:0;bottom:100px;"></div>
             
 			<div class="jg1" data-16400="opacity:0;left:0%;" data-17500="opacity:1;left:-2%" data-18000="opacity:1;left:-8%" data-18700="opacity:0;left:-10%;"></div>
+			<div class="cld4" data-16400="opacity:0;left:40%;" data-17500="opacity:1;left:30%" data-18000="opacity:1;left:28%" data-18700="opacity:0;left:20%;"></div>
 			<div class="jg2" data-16400="opacity:0;left:-10%;" data-17500="opacity:1;left:-6%" data-18600="opacity:1;left:-3%" data-18700="opacity:0;left:0%;"></div>
 			<div class="jg3" data-17400="opacity:0;left:0%;" data-18000="opacity:1;left:-5%" data-18700="opacity:0;left:-10%;"></div>
+			<div class="cld4" data-16400="opacity:0;left:45%;" data-17500="opacity:1;left:55%" data-18000="opacity:1;left:65%" data-18700="opacity:0;left:70%;top:30%;"></div>
 			<div class="jg4" data-17400="opacity:0;right:0%;" data-18000="opacity:1;right:-5%" data-18700="opacity:0;right:-10%;"></div>
-			
+			<div class="cld5" data-16400="opacity:0;left:30%;" data-17500="opacity:0.7;left:25%" data-18000="opacity:0.7;left:20%" data-18700="opacity:0;left:10%;top:70%;"></div>
 			<div class="sp1machine" data-16000="right:100%;" data-17000="right:50%" data-17600="right:50%" data-18600="right:100%;"></div>
 			<div class="sp1" data-15000="opacity:0;right:50%;top:100%;transform:rotate(-30deg);" data-15400="opacity:1;transform:rotate(0deg);right:50%;top:30%" data-16800="top:30%" data-17000="opacity:1;top:40%" data-17600="right:50%" data-18600="right:100%;"></div>
 
 			<div class="jg5" data-15000="opacity:0;top:100%;left:0" data-16000="opacity:1;top:0%;" data-17000="opacity:0;top:-100%;"></div>
 			<div class="jg6" data-14700="opacity:0;top:100%;right:0;" data-15700="opacity:1;top:0%;" data-16700="opacity:0;top:-100%;"></div>
 
-            <div class="bg1" data-14000="opacity:1;left:10%;" data-16970="opacity:0;" data-13000="opacity:0;"></div>
+            <div class="bg1" data-14000="opacity:1;left:10%;top:40%" data-16970="opacity:0;top:20%" data-13000="opacity:0;"></div>
 			<div class="bird3" data-14000="left:100%;" data-16970="left:-100%;"></div>
 			<div class="bird2" data-14000="left:100%;" data-17000="left:-100%;"></div>
 			<div class="bird1" data-14000="left:100%;" data-17150="left:-100%;"></div>
@@ -48,7 +114,7 @@
 			<div class="moon2" data-9000="top:100%;" data-14000="top:-100%;"></div>
 
 			<div class="pctg" data-9000="bottom:-100%" data-11000="bottom:0;width:1269px;margin-right:0;" data-14000="width:0;margin-right:1269px;"></div>
-			<div class="bg2" data-5500="opacity:1;left:10%;" data-13000="opacity:0;" data-2000="opacity:0;"></div>
+			<div class="bg2" data-5500="opacity:1;left:10%;top:40%" data-13000="opacity:0;top:20%" data-2000="opacity:0;"></div>
 			<div class="tomato" data-6500="top:100%;" data-7200="top:50%;" data-7800="top:20%;" data-9000="top:-100%;"></div>
 			<div class="tomato1" data-6700="transform:rotate(0deg);top:15%;opacity:0;" data-6800="opacity:1;top:18%;" data-8200="transform:rotate(20deg);top:105%;opacity:1;"></div>
 			<div class="ufo" data-5500="left:-100%;opacity:0;" data-6700="left:40%;opacity:1;" data-6800="left:40%;opacity:1;" data-8300="left:100%;opacity:0;"></div>
@@ -57,69 +123,115 @@
 			<div class="win7" data-2000="top:-100%;" data-4000="top:40%;opacity:1;" data-4500="top:45%;" data-5000="top:100%;"></div>
 
 			<div class="sp3machine" data-7400="left:100%;" data-8400="left:50%" data-9400="left:100%;"></div>
-			<div class="sp3" data-5500="opacity:0;right:50%;top:100%;transform:rotate(-30deg);" data-6000="opacity:1;transform:rotate(0deg);right:50%;top:30%" data-7400="opacity:1;transform:rotate(0deg);left:50%;" data-8400="opacity:1;left:50%;" data-9400="opacity:1;left:100%;"></div>
+			<div class="sp3" data-5500="opacity:0;right:50%;top:100%;transform:rotate(-30deg);" data-6000="opacity:1;transform:rotate(0deg);right:50%;top:40%" data-7400="opacity:1;transform:rotate(0deg);left:50%;" data-8400="opacity:1;left:50%;" data-9400="opacity:1;left:100%;"></div>
 
 			<div class="sp2machine" data-14400="left:100%;" data-15400="left:50%" data-16400="left:100%;"></div>
 			<div class="sp2" data-13000="opacity:0;right:50%;top:100%;transform:rotate(-30deg);" data-13400="opacity:1;transform:rotate(0deg);right:50%;top:30%" data-14400="opacity:1;transform:rotate(0deg);left:50%;" data-15400="opacity:1;left:50%;" data-16400="opacity:1;left:100%;"></div>
 
-			<div class="bluescreen" data-4500="opacity:0.7;top:100%" data-5000="opacity:0.7;top:0%" data-5500="opacity:0.7;top:0%" data-6200="opacity:0.7;top:-100%">
+			<div class="bluescreen" data-4500="opacity:0.7;top:100%" data-5500="opacity:0.7;top:0%" data-6200="opacity:0.7;top:-100%">
 				<div class="text"></div>
 			</div>
+			<div class="people" data-1000="opacity:0;top:60%;transform:rotate(90deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:29%;opacity:0;"></div>
+			<div class="people" data-1000="opacity:0;top:40%;transform:rotate(-90deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:65%;opacity:0;"></div>
+			<div class="people" data-1000="opacity:0;top:20%;transform:rotate(20deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:70%;opacity:0;"></div>
+			<div class="people" data-1000="opacity:0;top:70%;transform:rotate(-40deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:34%;opacity:0;"></div>
 
 			<div class="table" data-1000="opacity:1;top:110%" data-2000="opacity:1;top:40%" data-3000="top:-100%"></div>
+
 			<div class="jgend" data-0="opacity:1;top:100%" data-2000="opacity:1;top:-10%" data-3000="top:-100%"></div>
 			<div class="star" data-0="opacity:1;top:100%" data-2000="opacity:1;top:-10%" data-3000="top:-100%"></div>
-			<div class="footer" data-0="opacity:1;top:60%" data-1000="top:-100%"></div>
-			<div class="hellobye" data-0="opacity:1;top:40%" data-1000="opacity:1;top:60%" data-1500="opacity:0;top:70%"></div>
-			<div class="float" data-0="opacity:1;top:100%;transform:rotate(20deg);" data-1000="opacity:1;top:60%;transform:rotate(0deg);" data-2000="opacity:1;top:40%;transform:rotate(20deg);" data-3000="opacity:0;top:70%"></div>
-			<div class="float3" data-0="opacity:0;top:80%;transform:rotate(20deg);" data-1000="opacity:1;top:70%;transform:rotate(0deg);" data-2000="opacity:1;top:60%;transform:rotate(20deg);" data-3000="opacity:0;top:70%"></div>
+			<div class="footer" data-0="opacity:1;top:54%" data-2000="top:-60%"></div>
+			<div id="hellobye" class="hellobye" data-0="opacity:1;top:40%" data-600="opacity:0" data-1000="opacity:0;top:60%" data-1500="opacity:0;top:70%"></div>
+			<div class="watch_more" data-0="opacity:1;top:50%" data-200="opacity:0" data-1000="opacity:0;top:70%" data-1500="opacity:0;top:80%;" onclick="window.scrollTo(0,19000);"></div>
+			<div class="share" data-0="opacity:1;top:86%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"><img src="images/shareto.png"/></div>
+			<div class="sina" data-0="opacity:1;top:85%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"></div>
+			<div class="wechat" data-0="opacity:1;top:85%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"></div>
+			<div class="renren" data-0="opacity:1;top:85%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"></div>
+			<!-- <div class="float" data-0="opacity:1;top:100%;transform:rotate(20deg);" data-1000="opacity:1;top:60%;transform:rotate(0deg);" data-2000="opacity:1;top:40%;transform:rotate(20deg);" data-3000="opacity:0;top:70%"></div> -->
 
-			<div class="float2" data-0="opacity:1;top:100%;transform:rotate(20deg);" data-1000="opacity:1;top:30%;transform:rotate(30deg);" data-2000="opacity:1;top:40%;transform:rotate(20deg);" data-3000="opacity:0;top:70%"></div>
-			<div class="float4" data-0="opacity:0;top:50%;transform:rotate(20deg);" data-1000="opacity:1;top:40%;transform:rotate(30deg);" data-2000="opacity:1;top:50%;transform:rotate(20deg);" data-3000="opacity:0;top:60%"></div>
+			<!-- <div class="float2" data-0="opacity:1;top:100%;transform:rotate(20deg);" data-1000="opacity:1;top:30%;transform:rotate(30deg);" data-2000="opacity:1;top:40%;transform:rotate(20deg);" data-3000="opacity:0;top:50%"></div> -->
+			<!-- <div class="float4" data-0="opacity:0;top:50%;transform:rotate(20deg);" data-1000="opacity:1;top:40%;transform:rotate(30deg);" data-2000="opacity:1;top:50%;transform:rotate(20deg);" data-3000="opacity:0;top:40%"></div> -->
 
+			<!-- <div class="float4" data-0="left:80%;opacity:0;top:20%;transform:rotate(20deg);" data-1000="opacity:1;top:30%;transform:rotate(0deg);" data-2000="opacity:1;top:40%;transform:rotate(20deg);" data-3000="opacity:0;top:20%"></div>
+			<div class="float3" data-0="left:20%;opacity:0;top:20%;transform:rotate(20deg);" data-1000="opacity:1;top:30%;transform:rotate(30deg);" data-2000="opacity:1;top:20%;transform:rotate(20deg);" data-3000="opacity:0;top:30%"></div> -->
 
-			<div class="rocket" data-1000="top:110%" data-2000="top:45%" 15400="top:30%" data-16800="top:30%" data-17000="top:40%;" data-19500="top:40%;" data-20000="top:100%;">
+			<div class="virus1" data-0="opacity:0;left:0%;top:100%;transform:rotate(20deg);" data-1000="left:10%;opacity:1;top:30%;transform:rotate(30deg);" data-2000="left:0%;opacity:0;top:40%;transform:rotate(20deg);"></div>
+			<div class="virus2" data-0="left:0%;opacity:0;top:50%;transform:rotate(20deg);" data-1000="left:10%;opacity:1;top:40%;transform:rotate(30deg);" data-2000="left:0%;opacity:0;top:50%;transform:rotate(20deg);"></div>
+			<div class="virus3" data-0="right:0%;opacity:0;top:50%;transform:rotate(20deg);" data-1000="right:10%;opacity:1;top:40%;transform:rotate(30deg);" data-2000="right:0%;opacity:0;top:50%;transform:rotate(20deg);"></div>
+
+			<div class="rocket" data-1000="top:110%" data-2000="top:38%" 15400="top:30%" data-16800="top:30%" data-17000="top:40%;" data-19500="top:40%;" data-20000="top:100%;">
 			    <div class="rocket2"></div>
 				<div class="fire" data-2500="height:0px;" data-3000="height:50px;" data-3500="height:80px;" data-4000="height:154px;" data-4500="height:80px;" data-5000="height:154px;" data-5500="height:80px;" data-6000="height:154px;" data-6500="height:80px;" data-7000="height:154px;" data-7500="height:80px;" data-8000="height:154px;" data-8500="height:80px;" data-9000="height:154px;" data-9500="height:80px;" data-10000="height:154px;" data-10500="height:80px;" data-11000="height:154px;" data-11500="height:80px;" data-12000="height:154px;" data-12500="height:80px;" data-13000="height:154px;" data-13500="height:80px;" data-14000="height:154px;" data-14500="height:80px;" data-15000="height:154px;" data-15500="height:80px;" data-16000="height:154px;" data-16500="height:80px;" data-17000="height:154px;" data-18500="height:80px;" data-19000="height:0;" style="z-index:100;"></div>
 				
 				<div class="hh1" data-13800="height:40px;" data-14500="height:0px;"></div>
 				<div class="hh2" data-13700="width:44px;" data-14200="width:0px;"></div>
+				<div class="elc_fire" data-13000="margin-top:30px;margin-left:80px;opacity:0;" data-13100="opacity:1;" data-13200="opacity:0;" data-13300="opacity:1;" data-13400="opacity:0;" data-13500="opacity:1;" data-13600="opacity:0;" data-13700="opacity:1;" data-13800="opacity:0;" data-13900="opacity:1;" data-14200="opacity:0;"></div>
 				<div class="hh3" data-8500="height:27px;" data-9200="height:0px;"></div>
 				<div class="hh4" data-8500="opacity:1;" data-9200="opacity:0;"></div>
 				<div class="hh5" data-8500="opacity:1;" data-9200="opacity:0;"></div>
-				<div class="ie6" data-8200="height:122px;" data-8800="height:0px;"></div>
-				<div class="bling" data-16600="opacity:0;margin-top: 100px;margin-left: 40px;" data-17050="opacity:1;" data-17200="opacity:0;margin-top: 20px;margin-left: 30px;"></div>
+				<!-- <div class="ie6" data-8200="height:122px;" data-8800="height:0px;"><img data-8200="height:122px;width:41px;top:-20%;left:0%;" data-8800="height:0px;width:0px;top:-50px;left:-40%;" src="images/ie6.png"/>
+				</div> -->
+				<div class="door" data-7600="top:40%;left:-30%;transform:rotate(50deg);opacity:0;" data-8800="top:10%;left:-20%;transform:rotate(20deg);opacity:1;" data-9000="top:0%;left:0%;transform:rotate(0deg);opacity:1;" data-20000="opacity:1;top:0%;left:0%;transform:rotate(0deg);;width:15px;"></div>
+				<div class="elc_fire" data-7600="margin-top:80px;margin-left:35px;opacity:0;" data-7700="opacity:1;" data-7800="opacity:0;" data-7900="opacity:1;" data-8000="opacity:0;" data-8100="opacity:1;" data-8200="opacity:0;" data-8300="opacity:1;" data-8400="opacity:0;" data-8500="opacity:1;" data-8600="opacity:0;"></div>
+				<div class="elc_fire" data-4500="margin-top:90px;margin-left:45px;opacity:0;" data-4600="opacity:1;" data-4700="opacity:0;" data-4800="opacity:1;" data-4900="opacity:0;" data-5000="opacity:1;" data-5100="opacity:0;" data-5200="opacity:1;" data-5300="opacity:0;" data-5400="opacity:1;" data-5500="opacity:0;"></div>
+				<div class="bling" data-17000="opacity:0;transform:rotate(-30deg);" data-18000="opacity:1;" data-19500="opacity:0;transform:rotate(30deg);"></div>
+				<div class="bling" data-17000="margin-top:90px;margin-left:110px;opacity:0;transform:rotate(-60deg);" data-18000="opacity:1;" data-19000="opacity:0;transform:rotate(20deg);"></div>
 			</div>
+			
 
-			<div class="table-box" data-1000="opacity:1;top:110%" data-2000="opacity:1;top:40%" data-3000="top:-100%"></div>
+			<div class="table-box" data-1000="opacity:1;top:120%" data-2000="opacity:1;top:40%" data-3000="top:-100%"></div>
 
 
 			<div class="grd" data-18000="opacity:1;bottom:-300px" data-19000="opacity:1;bottom:0" data-19700="opacity:1;bottom:0px" data-20000="opacity:0;bottom:-100px;"></div>
 
 			<div class="cld3" data-18000="opacity:1;bottom:-400px" data-19000="opacity:1;bottom:100px" data-19500="opacity:1;bottom:100px" data-19700="opacity:0;bottom:80px;"></div>
 
+			<div class="start" data-17700="opacity:1;bottom:-367px" data-19000="opacity:1;bottom:75px" data-19300="opacity:1;bottom:75px" data-19500="opacity:0;bottom:25px;">
+				<a href="#scrolltotop"><div  class="startbtn" id="gototop"></div></a>
+			</div>
 
-			<div class="date-2001" data-18200="opacity:0;" data-18500="opacity:1;" data-19000="opacity:0;"></div>
+			<!-- <div class="date-2001" data-18200="opacity:0;" data-18500="opacity:1;" data-19000="opacity:0;"></div> -->
 			<div class="date-2002" data-16500="opacity:0;" data-17500="opacity:1;" data-17700="opacity:1;" data-18200="opacity:0;"></div>
 			<div class="date-2004" data-13500="opacity:0;" data-14000="opacity:1;" data-16000="opacity:1;" data-17000="opacity:0;"></div>
-			<div class="date-2007" data-8000="opacity:0;" data-8800="opacity:1;" data-13500="opacity:1;" data-14500="opacity:0;"></div>
+			<div class="date-2007" data-8700="opacity:0;" data-9500="opacity:1;" data-13500="opacity:1;" data-14500="opacity:0;"></div>
 
-			<div class="date-2008" data-8300="opacity:0;" data-8700="opacity:1;" data-9500="opacity:0;"></div>
+			<div class="date-2008" data-8000="opacity:0;" data-8500="opacity:1;" data-9500="opacity:0;"></div>
 			<div class="date-2008-2" data-6300="opacity:0;" data-6700="opacity:1;" data-7500="opacity:0;"></div>
 			<div class="date-2009" data-5600="opacity:0;" data-6200="opacity:1;" data-6700="opacity:0;"></div>
-			<div class="date-2011" data-3000="opacity:0;" data-4000="opacity:1;" data-5000="opacity:0;"></div>
-			<div class="date-2013" data-1000="opacity:0;" data-2000="opacity:1;" data-3000="opacity:0;"></div>
+			<div class="date-2011" data-3500="opacity:0;" data-4000="opacity:1;" data-5000="opacity:0;"></div>
+			<div class="date-2013" data-2700="opacity:0;" data-3500="opacity:1;" data-4000="opacity:0;"></div>
+			<div class="pctg2" data-2700="bottom:-100%;opacity:0;" data-4000="bottom:0;width:1269px;margin-right:0;opacity:0.5;" data-6000="width:0;margin-right:1269px;opacity:0;"></div>
+			<div class="date-2014" data-1000="opacity:0;" data-2000="opacity:1;" data-2800="opacity:0;"></div>
 			<div class="cmt0" data-18500="opacity:0;" data-19000="opacity:1;" data-19500="opacity:0;" ></div>
 
-			<div id="loading">
-			<div class="winlogo" data-19000="opacity:0;" data-19500="opacity:1;" ></div>
-			<div class="loadinggif" data-19000="opacity:0;" data-19500="opacity:1;" ></div>
-			</div>	
 		</div>
 	</div>
 	<!-- <div id="nav"></div> -->
+	<script type="text/javascript" src="script/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="script/jquery.scrollTo-1.4.1-min.js"></script>
+	<script type="text/javascript" src="script/easing.js"></script>
 	<script type="text/javascript" src="script/skrollr.js"></script>
+	<!--[if lt IE 9]>
+      <script type="text/javascript" src="skrollr.ie.js"></script>
+    <![endif]-->
 	<script type="text/javascript">
+        
+        $('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length && target || $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                var targetOffset = target.offset().top;
+                $('html,body').animate({
+                    scrollTop: targetOffset
+                },
+               40000);
+                return false;
+            }
+        }
+    });
+        var times=84;
+        var time2=0;
 		var s = skrollr.init();
 		window.scrollTo(0,20000);
 		//$(document).scrollTop(20000);
@@ -128,15 +240,16 @@
 		day	 	: 8,
 		year	: 2014,
 		};
-
+        
 		setInterval(function() {
 			
-			d2 = new Date(countdown.month+'/'+countdown.day+'/'+countdown.year).getTime();
+			d2 = new Date(2014,3,8,15,0,0);
 			d1 = new Date().getTime();
-			difference = (d2-d1) / 1000;
+			difference = (d2-d1)/1000;
 			countdown.days 		= Math.floor(difference / (60 * 60 * 24));
 			difference -= (countdown.days * (60 * 60 * 24));
-			countdown.hours 	= Math.floor(difference / (60 * 60));
+			countdown.hours 	= Math.floor(difference/ (60 * 60));
+			// alert(difference);
 			difference -= (countdown.hours * (60 * 60));
 			countdown.minutes 	= Math.floor(difference / 60);
 			difference -= (countdown.minutes * 60);
@@ -146,29 +259,71 @@
 			countdown.hours = countdown.hours < 10 ? '0' + countdown.hours.toString() : countdown.hours;
 			countdown.minutes = countdown.minutes < 10 ? '0' + countdown.minutes.toString() : countdown.minutes;
 			countdown.seconds = countdown.seconds < 10 ? '0' + countdown.seconds.toString() : countdown.seconds;
-
+            
 			/*$('.countdown .days').html(countdown.days);
 			$('.countdown .hours').html(countdown.hours);
 			$('.countdown .minutes').html(countdown.minutes);
 			$('.countdown .seconds').html(countdown.seconds);*/
-			document.getElementById("zdays").innerHTML=countdown.days;
-			document.getElementById("zhours").innerHTML=countdown.hours;
-			document.getElementById("zminutes").innerHTML=countdown.minutes;
-			document.getElementById("zseconds").innerHTML=countdown.seconds;
+			if(countdown.days.toString()=="00" && countdown.hours.toString() == "00" && countdown.minutes.toString() == "00" && countdown.seconds.toString()=="00")
+				{     
+					  var hellobye = document.getElementById("hellobye");
+			          hellobye.style.background = "url(images/hellobye2.png)";
+
+			          var jl = document.getElementById("jl");
+			          jl.style.background = "url(images/jl2.png)";
+
+
+
+			     }
+			else{
+                 document.getElementById("zdays").innerHTML=countdown.days;
+			     document.getElementById("zhours").innerHTML=countdown.hours;
+			     document.getElementById("zminutes").innerHTML=countdown.minutes;
+			     document.getElementById("zseconds").innerHTML=countdown.seconds;
+
+		         }
+			
+			
 		}, 1000);
+
+
+		function goTop() {
+			window.setTimeout(window.scrollTo(0,0), 1000000);
+		}
 
 
 		function timelyFun(){
 			window.scrollTo(0,0);
 			superMagic.animateTo(19000, {easing: 'outCubic', duration: 1});
 			document.getElementById('loading').style.display = 'none';
+			document.body.onmousewheel = function(){return true;}
 		}
 
+		function percentage(){
+			if(times<100){
+				times=times+2;
+				document.getElementById('loadingword').innerHTML = times+"%";
+				setTimeout("percentage()",100);
+			}else{
+				timelyFun();
+			}
+		}
+
+		function percentage2(){
+			if(times<84){
+				times=times+1;
+				document.getElementById('loadingword').innerHTML = times+"%";
+				setTimeout("percentage2()",500);
+			}
+		}
+
+		document.body.onmousewheel = function(){return false;}
+		percentage2();
 		document.onreadystatechange = subSomething;//当页面加载状态改变的时候执行这个方法. 
 
 		function subSomething() { 
 			if(document.readyState == "complete") {//当页面加载状态为完全结束时进入
-				setTimeout("timelyFun()",2000);
+				percentage();
 			}
 		}
   
