@@ -5,7 +5,6 @@
 	<meta name="viewport" content="initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5"/>
 	<style type="text/css">
 		#loading {
-			overflow: none;
 		  z-index: 99999;
 		  width: 100%;
 		  height: 100%;
@@ -34,13 +33,13 @@
 		  left: 50%;
 		  margin-left: -80px;
 		  top: 60%;
-		}	
+		}		
 		#loadingword{
 		  position: fixed;
 		  left: 50%;
 		  margin-left: -20px;
 		  top: 70%;
-		}								
+		}									
 		@media screen and (max-width: 640px) {
 		   	#loading {
 			  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #17161c), color-stop(30%, #222129), color-stop(45%, #23232d), color-stop(60%, #123f67), color-stop(70%, #6e5191), color-stop(85%, #355ca4), color-stop(100%, #4598c7));
@@ -59,6 +58,13 @@
 				padding: 15px 5px;
 				margin: 0px 0px 0px 7px;
 			}	
+			.scroll
+			{
+                background: url(../images/scroll2.png) no-repeat;
+                width: 124px;
+                height: 59px;
+                margin-left: -62px;
+            }
 		}
 	</style>
 	
@@ -85,6 +91,7 @@
 
 			<div class="win98" data-17000="top:100%;" data-19000="top:-100%;"></div>
 			<div class="scroll" data-18500="opacity:0;" data-19000="opacity:1;" ></div>
+			<div class="tips_text"><p></div>
 			<div class="cld0" data-17700="opacity:1;bottom:-367px" data-19000="opacity:1;bottom:50px" data-19300="opacity:1;bottom:75px" data-19500="opacity:0;bottom:25px;"></div>
 			<div class="cld1" data-17800="opacity:1;bottom:-390px" data-19000="opacity:1;bottom:90px" data-19300="opacity:1;bottom:115px" data-19500="opacity:0;bottom:100px;"></div>
 
@@ -227,9 +234,9 @@
                 },
                40000);
                 return false;
-            }
-        }
-    });
+	            }
+	        }
+	    });
         var times=84;
         var time2=0;
 		var s = skrollr.init();
@@ -312,7 +319,7 @@
 		function percentage2(){
 			if(time2<84){
 				time2=time2+1;
-				document.getElementById('loadingword').innerHTML = time2+"%";
+				document.getElementById('loadingword').innerHTML = times+"%";
 				setTimeout("percentage2()",500);
 			}
 		}
