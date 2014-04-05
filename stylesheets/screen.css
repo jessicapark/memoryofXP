@@ -256,7 +256,7 @@ ul#main {
   margin-left: 120px;
 }
 /* line 141, ../sass/screen.scss */
-#main .grd {
+#main #grd {
   background: url(../images/grd.png) no-repeat;
   width: 1836px;
   height: 268px;
