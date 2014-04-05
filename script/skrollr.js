@@ -759,7 +759,8 @@
 					var speed = deltaY / deltaTime;
 
 					//Cap speed at 3 pixel/ms.
-					speed = Math.max(Math.min(speed, 3), -3);
+					speed = Math.max(Math.min(speed, 1), -1);
+					// speed = Math.max(Math.min(speed, 3), -3);
 
 					var duration = Math.abs(speed / _mobileDeceleration);
 					var targetOffset = speed * duration + 0.5 * _mobileDeceleration * duration * duration;
