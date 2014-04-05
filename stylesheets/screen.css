@@ -673,23 +673,7 @@ ul#main li {
   margin-top: -80px;
 }
 /* line 453, ../sass/screen.scss */
-#main #winlogo {
-  background: url(../images/winlogo.png) no-repeat;
-  width: 189px;
-  height: 150px;
-  left: 50%;
-  margin-left: -95px;
-  top: 30%;
-}
-/* line 461, ../sass/screen.scss */
-#main #loadinggif {
-  background: url(../images/loadinggif.gif) no-repeat;
-  width: 159px;
-  height: 23px;
-  left: 50%;
-  margin-left: -80px;
-  top: 60%;
-}
+
 /* line 469, ../sass/screen.scss */
 #main #cmt0 {
   background: url(../images/cmt0.png) no-repeat;
