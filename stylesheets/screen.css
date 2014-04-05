@@ -763,7 +763,15 @@ ul#main {
   z-index: 101;
 }
 /* line 533, ../sass/screen.scss */
-#main #bling {
+#main #bling1 {
+   background: url(../images/bling.png) no-repeat;
+  width: 22px;
+  height: 35px;
+  position: absolute;
+  z-index: 102;
+  margin-left: 50px;
+}
+#main #bling3 {
    background: url(../images/bling.png) no-repeat;
   width: 22px;
   height: 35px;
@@ -785,7 +793,22 @@ ul#main {
   height: 168px;
   right: 30%;
 }
-#main #people {
+#main #people1 {
+  background: url(../images/china_peopel1.png) no-repeat;
+  width: 50px;
+  height: 71px;
+}
+#main #people2 {
+  background: url(../images/china_peopel1.png) no-repeat;
+  width: 50px;
+  height: 71px;
+}
+#main #people3 {
+  background: url(../images/china_peopel1.png) no-repeat;
+  width: 50px;
+  height: 71px;
+}
+#main #people4 {
   background: url(../images/china_peopel1.png) no-repeat;
   width: 50px;
   height: 71px;
