@@ -885,6 +885,9 @@ ul#main {
   background: url(../images/startbtn.png) no-repeat;
   width: 60px;
   height: 63px;
+  position: absolute;
+  left: 131px;
+  top: 10px;
 }
 #main #startbtn:hover{
  background: url(../images/startbtn1.png) no-repeat;
