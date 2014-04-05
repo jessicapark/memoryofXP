@@ -71,11 +71,11 @@
 	
 </head>
 <body>
-	<div id="loading">
+	<!-- <div id="loading">
 			<div id="winlogo"></div>
 			<div id="loadinggif"></div>
 			<div id="loadingword"></div>
-	</div>	
+	</div>	 -->
     <div id="scrolltotop" style="position:absolute;width:1px;height:1px;top:0px;"></div>
      <div id="scrolltobottom" style="position:absolute;width:1px;height:1px;bottom:0px;"></div>
 	<div id="container">
@@ -325,9 +325,10 @@
 			}
 		}
 
-		document.body.onmousewheel = function(){return false;}
-		percentage2();
-		document.onreadystatechange = subSomething;//当页面加载状态改变的时候执行这个方法. 
+		// document.body.onmousewheel = function(){return false;}
+		// percentage2();
+		// document.onreadystatechange = subSomething;
+		//当页面加载状态改变的时候执行这个方法. 
 
 		function subSomething() { 
 			if(document.readyState == "complete") {//当页面加载状态为完全结束时进入
