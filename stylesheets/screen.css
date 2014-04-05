@@ -2,7 +2,7 @@
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ * <link href="/stylesheets/screen#css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -70,7 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /*@import "part1/*.png";*/
 /* line 106, date/*.png */
-.date-sprite, .main .date-2001, .main .date-2002, .main .date-2004, .main .date-2007, .main .date-2008, .main .date-2008-2, .main .date-2009, .main .date-2011, .main .date-2013 {
+#date-sprite, #main #date-2001, #main #date-2002, #main #date-2004, #main #date-2007, #main #date-2008, #main #date-2008-2, #main #date-2009, #main #date-2011, #main #date-2013 {
   background: url('../images/date-sdf679af81b.png') no-repeat;
 }
 
@@ -80,10 +80,16 @@ body {
   font-family: Courier, 'Hiragino Sans GB', 微软雅黑, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 25px;
+  background: url('../images/bg-x.png') repeat-x;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #17161c), color-stop(30%, #222129), color-stop(45%, #23232d), color-stop(60%, #123f67), color-stop(70%, #6e5191), color-stop(85%, #355ca4), color-stop(100%, #4598c7));
+  background-image: -webkit-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
+  background-image: -moz-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
+  background-image: -o-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
+  background-image: linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
 }
 
 /* line 21, ../sass/screen.scss */
-.countdown {
+#countdown {
   margin: 30px auto;
   color: #bbc8d9;
   font-size: 20px;
@@ -94,7 +100,7 @@ body {
 }
 
 /* line 30, ../sass/screen.scss */
-.countdown .jl {
+#countdown #jl {
   background: url(../images/jl.png) no-repeat;
   width: 473px;
   height: 25px;
@@ -102,7 +108,7 @@ body {
 }
 
 /* line 36, ../sass/screen.scss */
-.countdown span {
+#countdown span {
   font-family: Arial;
   display: inline-block;
   font-size: 50px;
@@ -152,23 +158,11 @@ body {
 #container {
   width: 100%;
   height: 100%;
-  background: url('../images/bg-x.png') repeat-x;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #17161c), color-stop(30%, #222129), color-stop(45%, #23232d), color-stop(60%, #123f67), color-stop(70%, #6e5191), color-stop(85%, #355ca4), color-stop(100%, #4598c7));
-  background-image: -webkit-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
-  background-image: -moz-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
-  background-image: -o-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
-  background-image: linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
 }
 
 /* line 83, ../sass/screen.scss */
-ul.main {
+ul#main {
   width: 100%;
-}
-
-/* line 86, ../sass/screen.scss */
-ul.main li {
-  width: 100%;
-  height: 1000px;
 }
 
 /* line 90, ../sass/screen.scss */
@@ -189,14 +183,14 @@ ul.main li {
 }
 
 /* line 103, ../sass/screen.scss */
-.rocket {
+#rocket {
   /*background: url(../images/rocket.png) no-repeat;*/
   height: 336px;
   width: 172px;
   left: 50%;
   margin-left: -86px;
 }
-.start{
+#start{
   background: url(../images/start.png) no-repeat;
   width: 291px;
   height: 170px;
@@ -207,7 +201,7 @@ ul.main li {
   margin-top: 11px;
   position: absolute;
 }
-.scroll{
+#scroll{
   background: url(../images/scroll.png) no-repeat;
   width: 39px;
   height: 24px;
@@ -216,7 +210,7 @@ ul.main li {
   top: 20px;
 }
 /* line 113, ../sass/screen.scss */
-.main .cld0 {
+#main #cld0 {
   background: url(../images/cld0.png) no-repeat;
   width: 1021px;
   height: 365px;
@@ -224,7 +218,7 @@ ul.main li {
   margin-left: -510px;
 }
 /* line 120, ../sass/screen.scss */
-.main .cld1 {
+#main #cld1 {
   background: url(../images/cld1.png) no-repeat;
   width: 766px;
   height: 289px;
@@ -232,7 +226,7 @@ ul.main li {
   margin-left: -383px;
 }
 /* line 127, ../sass/screen.scss */
-.main .cld2 {
+#main #cld2 {
   background: url(../images/cld2.png) no-repeat;
   width: 474px;
   height: 163px;
@@ -240,21 +234,21 @@ ul.main li {
   margin-left: -237px;
 }
 /* line 134, ../sass/screen.scss */
-.main .cld3 {
+#main #cld3 {
   background: url(../images/cld3.png) no-repeat;
   width: 289px;
   height: 214px;
   left: 50%;
   margin-left: -145px;
 }
-.main .cld4{
+#main #cld4{
   background: url(../images/cld4.png) no-repeat;
   width: 289px;
   height: 214px;
   left: 50%;
   margin-left: 120px;
 }
-.main .cld5{
+#main #cld5{
   background: url(../images/cld5.png) no-repeat;
   width: 289px;
   height: 214px;
@@ -262,7 +256,7 @@ ul.main li {
   margin-left: 120px;
 }
 /* line 141, ../sass/screen.scss */
-.main .grd {
+#main .grd {
   background: url(../images/grd.png) no-repeat;
   width: 1836px;
   height: 268px;
@@ -271,33 +265,33 @@ ul.main li {
 }
 
 /* line 149, ../sass/screen.scss */
-.main .jg1 {
+#main #jg1 {
   background: url(../images/jg1.png) no-repeat;
   width: 1653px;
   height: 287px;
   margin-top: 100px;
 }
-.main .bg1 {
+#main #bg1 {
   background: url(../images/bg01.png) no-repeat;
   width: 1653px;
   height: 663px;
   margin-top: 100px;
 }
-.main .bg2 {
+#main #bg2 {
   background: url(../images/bg02.png) no-repeat;
   width: 1653px;
   height: 663px;
   margin-top: 100px;
 }
 /* line 155, ../sass/screen.scss */
-.main .jg2 {
+#main #jg2 {
   background: url(../images/jg2.png) no-repeat;
   width: 1653px;
   height: 287px;
   margin-top: 160px;
 }
 /* line 161, ../sass/screen.scss */
-.main .jg3 {
+#main #jg3 {
   background: url(../images/jg3.png) no-repeat;
   width: 530px;
   height: 131px;
@@ -305,7 +299,7 @@ ul.main li {
   margin-top: 300px;
 }
 /* line 168, ../sass/screen.scss */
-.main .jg4 {
+#main #jg4 {
   background: url(../images/jg4.png) no-repeat;
   width: 424px;
   height: 150px;
@@ -313,7 +307,7 @@ ul.main li {
   margin-top: 130px;
 }
 /* line 175, ../sass/screen.scss */
-.main .sp1 {
+#main #sp1 {
   background: url(../images/sp1.png) no-repeat;
   width: 28px;
   height: 123px;
@@ -322,7 +316,7 @@ ul.main li {
   margin-top: 40px;
 }
 /* line 183, ../sass/screen.scss */
-.main .sp1machine {
+#main #sp1machine {
   background: url(../images/sp1machine.png) no-repeat;
   width: 793px;
   height: 177px;
@@ -330,7 +324,7 @@ ul.main li {
   margin-right: 70px;
 }
 /* line 190, ../sass/screen.scss */
-.main .sp2 {
+#main #sp2 {
   background: url(../images/sp2.png) no-repeat;
   width: 68px;
   height: 118px;
@@ -338,7 +332,7 @@ ul.main li {
   margin-top: 40px;
 }
 /* line 197, ../sass/screen.scss */
-.main .sp2machine {
+#main #sp2machine {
   background: url(../images/sp2machine.png) no-repeat;
   width: 720px;
   height: 290px;
@@ -347,7 +341,7 @@ ul.main li {
   margin-left: 60px;
 }
 /* line 205, ../sass/screen.scss */
-.main .sp3 {
+#main #sp3 {
   background: url(../images/sp3.png) no-repeat;
   width: 75px;
   height: 266px;
@@ -355,7 +349,7 @@ ul.main li {
   margin-top: 0;
 }
 /* line 212, ../sass/screen.scss */
-.main .sp3machine {
+#main #sp3machine {
   background: url(../images/sp2machine.png) no-repeat;
   width: 720px;
   height: 290px;
@@ -364,7 +358,7 @@ ul.main li {
   margin-left: 60px;
 }
 /* line 220, ../sass/screen.scss */
-.main .bird1 {
+#main #bird1 {
   background: url(../images/bird1.png) no-repeat;
   width: 130px;
   height: 133px;
@@ -372,7 +366,7 @@ ul.main li {
   margin-left: 100px;
 }
 /* line 227, ../sass/screen.scss */
-.main .bird2 {
+#main #bird2 {
   background: url(../images/bird2.png) no-repeat;
   width: 108px;
   height: 271px;
@@ -380,21 +374,21 @@ ul.main li {
   margin-left: 80px;
 }
 /* line 234, ../sass/screen.scss */
-.main .bird3 {
+#main #bird3 {
   background: url(../images/bird3.png) no-repeat;
   width: 417px;
   height: 140px;
   top: 20%;
 }
 /* line 240, ../sass/screen.scss */
-.main .ytb1 {
+#main #ytb1 {
   background: url(../images/ytb1.png) no-repeat;
   width: 72px;
   height: 60px;
   margin-top: 450px;
 }
 /* line 246, ../sass/screen.scss */
-.main .ytb2 {
+#main #ytb2 {
   background: url(../images/ytb2.png) no-repeat;
   width: 53px;
   height: 44px;
@@ -402,7 +396,7 @@ ul.main li {
   margin-right: 80px;
 }
 /* line 253, ../sass/screen.scss */
-.main .jg5 {
+#main #jg5 {
   background: url(../images/jg5.png) no-repeat;
   width: 618px;
   height: 257px;
@@ -410,7 +404,7 @@ ul.main li {
   margin-top: 300px;
 }
 /* line 260, ../sass/screen.scss */
-.main .jg6 {
+#main #jg6 {
   background: url(../images/jg6.png) no-repeat;
   width: 613px;
   height: 221px;
@@ -418,41 +412,41 @@ ul.main li {
   margin-top: 130px;
 }
 /* line 267, ../sass/screen.scss */
-.main .pctg {
+#main #pctg {
   background: url(../images/pctg.png) no-repeat;
   height: 566px;
   right: 0;
   bottom: 0;
 }
-.main .pctg2 {
+#main #pctg2 {
   background: url(../images/pctg2.png) no-repeat;
   height: 566px;
   right: 0;
   bottom: 0;
 }
 /* line 273, ../sass/screen.scss */
-.main .vista {
+#main #vista {
   background: url(../images/vista.png) no-repeat;
   width: 128px;
   height: 230px;
   left: 20%;
 }
 /* line 279, ../sass/screen.scss */
-.main .moon1 {
+#main #moon1 {
   background: url(../images/moon1.png) no-repeat;
   width: 253px;
   height: 205px;
   left: 10%;
 }
 /* line 285, ../sass/screen.scss */
-.main .moon2 {
+#main #moon2 {
   background: url(../images/moon2.png) no-repeat;
   width: 263px;
   height: 442px;
   right: 10%;
 }
 /* line 291, ../sass/screen.scss */
-.main .ufo {
+#main #ufo {
   background: url(../images/ufo.png) no-repeat;
   top: -80px;
   width: 801px;
@@ -460,7 +454,7 @@ ul.main li {
   margin-left: -400px;
 }
 /* line 298, ../sass/screen.scss */
-.main .tomato1 {
+#main #tomato1 {
   background: url(../images/tomato.png) no-repeat;
   width: 251px;
   height: 139px;
@@ -468,21 +462,21 @@ ul.main li {
   left: 40%;
 }
 /* line 305, ../sass/screen.scss */
-.main .tomato {
+#main #tomato {
   background: url(../images/tomato-db.png) no-repeat;
   width: 374px;
   height: 366px;
   right: 10%;
 }
 /* line 311, ../sass/screen.scss */
-.main .win7 {
+#main #win7 {
   background: url(../images/win7.png) no-repeat;
   width: 303px;
   height: 446px;
   right: 20%;
 }
 /* line 317, ../sass/screen.scss */
-.main .capsule {
+#main #capsule {
   background: url(../images/capsule.png) no-repeat;
   width: 108px;
   height: 52px;
@@ -490,7 +484,7 @@ ul.main li {
   margin-left: -54px;
 }
 /* line 324, ../sass/screen.scss */
-.main .date-2001 {
+#main #date-2001 {
   background-position: 0 -1477px;
   width: 146px;
   height: 180px;
@@ -498,7 +492,7 @@ ul.main li {
   margin-left: 20px;
 }
 /* line 331, ../sass/screen.scss */
-.main .date-2002 {
+#main #date-2002 {
   background-position: 0 -937px;
   width: 169px;
   height: 180px;
@@ -506,7 +500,7 @@ ul.main li {
   margin-left: 20px;
 }
 /* line 338, ../sass/screen.scss */
-.main .date-2004 {
+#main #date-2004 {
   background-position: 0 -397px;
   width: 200px;
   height: 180px;
@@ -514,7 +508,7 @@ ul.main li {
   margin-left: 20px;
 }
 /* line 345, ../sass/screen.scss */
-.main .date-2007 {
+#main #date-2007 {
   background-position: 0 0;
   width: 184px;
   height: 217px;
@@ -522,7 +516,7 @@ ul.main li {
   margin-left: 20px;
 }
 /* line 352, ../sass/screen.scss */
-.main .date-2008 {
+#main #date-2008 {
   background-position: 0 -217px;
   width: 189px;
   height: 180px;
@@ -530,7 +524,7 @@ ul.main li {
   margin-left: 20px;
 }
 /* line 359, ../sass/screen.scss */
-.main .date-2008-2 {
+#main #date-2008-2 {
   background-position: 0 -757px;
   width: 300px;
   height: 180px;
@@ -538,7 +532,7 @@ ul.main li {
   margin-left: 20px;
 }
 /* line 366, ../sass/screen.scss */
-.main .date-2009 {
+#main #date-2009 {
   background-position: 0 -1117px;
   width: 250px;
   height: 180px;
@@ -546,7 +540,7 @@ ul.main li {
   margin-left: 20px;
 }
 /* line 373, ../sass/screen.scss */
-.main .date-2011 {
+#main #date-2011 {
   background-position: 0 -1297px;
   width: 280px;
   height: 180px;
@@ -554,13 +548,13 @@ ul.main li {
   margin-left: 20px;
 }
 /* line 380, ../sass/screen.scss */
-.main .date-2013 {
+#main #date-2013 {
   background-position: 0 -577px;
   width: 302px;
   height: 180px;
   margin-top: 20px;
   margin-left: 20px;
-}.main .date-2014 {
+}#main #date-2014 {
   background: url(../images/date-2014.png) no-repeat;
   width: 296px;
   height: 181px;
@@ -568,20 +562,20 @@ ul.main li {
   margin-left: 20px;
 }
 /* line 387, ../sass/screen.scss */
-.main .bluescreen {
+#main #bluescreen {
   background-color: #2a56e7;
   width: 100%;
   height: 100%;
 }
 /* line 391, ../sass/screen.scss */
-.main .bluescreen .text {
+#main #bluescreen #text {
   background: url(../images/bluescreen-text.png) no-repeat;
   width: 957px;
   height: 188px;
   margin: 30px;
 }
 /* line 398, ../sass/screen.scss */
-.main .jgend {
+#main #jgend {
   background: url(../images/jgend.png) no-repeat;
   width: 1280px;
   height: 326px;
@@ -589,7 +583,7 @@ ul.main li {
   margin-left: -640px;
 }
 /* line 405, ../sass/screen.scss */
-.main .star {
+#main #star {
   background: url(../images/star.png) no-repeat;
   width: 1013px;
   height: 313px;
@@ -597,7 +591,7 @@ ul.main li {
   margin-left: -500px;
 }
 /* line 412, ../sass/screen.scss */
-.main .footer {
+#main #footer {
   background: url(../images/footer.png) no-repeat;
   width: 1073px;
   height: 338px;
@@ -605,7 +599,7 @@ ul.main li {
   margin-left: -530px;
 }
 /* line 419, ../sass/screen.scss */
-.main .hellobye {
+#main #hellobye {
   background: url(../images/hellobye.png) no-repeat;
   width: 436px;
   height: 42px;
@@ -613,19 +607,19 @@ ul.main li {
   margin-left: -218px;
 }
 /* line 426, ../sass/screen.scss */
-.main .float {
+#main #float {
   background: url(../images/float.png) no-repeat;
   width: 127px;
   height: 135px;
   left: 20%;
 }
-.main .float3 {
+#main #float3 {
   background: url(../images/float_people.png) no-repeat;
   width: 190px;
   height: 201px;
   left: 30%;
 }
-.main .float4 {
+#main #float4 {
   background: url(../images/float_people02.png) no-repeat;
   width: 190px;
   height: 201px;
@@ -633,29 +627,29 @@ ul.main li {
 }
 
 /* line 432, ../sass/screen.scss */
-.main .float2 {
+#main #float2 {
   background: url(../images/float.png) no-repeat;
   width: 127px;
   height: 135px;
   right: 20%;
 }
-.main .virus1 {
+#main #virus1 {
   background: url(../images/virus1.png) no-repeat;
   width: 109px;
   height: 299px;
 }
-.main .virus2 {
+#main #virus2 {
   background: url(../images/virus2.png) no-repeat;
   width: 148px;
   height: 128px;
 }
-.main .virus3 {
+#main #virus3 {
   background: url(../images/virus3.png) no-repeat;
   width: 109px;
   height: 299px;
 }
 /* line 438, ../sass/screen.scss */
-.main .table {
+#main #table {
   background: url(../images/table.png) no-repeat;
   width: 1377px;
   height: 368px;
@@ -663,7 +657,7 @@ ul.main li {
   margin-left: -695px;
 }
 /* line 445, ../sass/screen.scss */
-.main .table-box {
+#main #table-box {
   background: url(../images/box.png) no-repeat;
   width: 230px;
   height: 311px;
@@ -672,7 +666,7 @@ ul.main li {
   margin-top: -80px;
 }
 /* line 453, ../sass/screen.scss */
-.main .winlogo {
+#main #winlogo {
   background: url(../images/winlogo.png) no-repeat;
   width: 189px;
   height: 150px;
@@ -681,7 +675,7 @@ ul.main li {
   top: 30%;
 }
 /* line 461, ../sass/screen.scss */
-.main .loadinggif {
+#main #loadinggif {
   background: url(../images/loadinggif.gif) no-repeat;
   width: 159px;
   height: 23px;
@@ -690,7 +684,7 @@ ul.main li {
   top: 60%;
 }
 /* line 469, ../sass/screen.scss */
-.main .cmt0 {
+#main #cmt0 {
   background: url(../images/cmt0.png) no-repeat;
   width: 385px;
   height: 68px;
@@ -699,7 +693,7 @@ ul.main li {
   margin-left: -193px;
 }
 /* line 477, ../sass/screen.scss */
-.main .hh1 {
+#main #hh1 {
   background: url(../images/hh1.png) no-repeat;
   width: 29px;
   height: 40px;
@@ -707,7 +701,7 @@ ul.main li {
   margin-left: 90px;
 }
 /* line 484, ../sass/screen.scss */
-.main .hh2 {
+#main #hh2 {
   background: url(../images/hh2.png) no-repeat;
   width: 44px;
   height: 17px;
@@ -715,7 +709,7 @@ ul.main li {
   margin-left: 98px;
 }
 /* line 491, ../sass/screen.scss */
-.main .hh3 {
+#main #hh3 {
   background: url(../images/hh3.png) no-repeat;
   width: 11px;
   height: 27px;
@@ -723,7 +717,7 @@ ul.main li {
   margin-left: 65px;
 }
 /* line 498, ../sass/screen.scss */
-.main .hh4 {
+#main #hh4 {
   background: url(../images/hh4.png) no-repeat;
   width: 39px;
   height: 21px;
@@ -731,14 +725,14 @@ ul.main li {
   margin-left: 42px;
 }
 /* line 505, ../sass/screen.scss */
-.main .hh5 {
+#main #hh5 {
   background: url(../images/hh5.png) no-repeat;
   width: 91px;
   height: 60px;
   margin-top: 98px;
   margin-left: 38px;
 }
-.main .door {
+#main #door {
   background: url(../images/door.png) no-repeat;
   width: 15px;
   height: 28px;
@@ -746,7 +740,7 @@ ul.main li {
   margin-left: 42px;
 }
 /* line 512, ../sass/screen.scss */
-.main .ie6 {
+#main #ie6 {
   /*background: url(../images/ie6.png) no-repeat;*/
   width: 41px;
   height: 122px;
@@ -754,7 +748,7 @@ ul.main li {
   margin-left: 15px;
 }
 /* line 519, ../sass/screen.scss */
-.main .fire {
+#main #fire {
   background: url(../images/fire.png) no-repeat;
   width: 172px;
   height: 154px;
@@ -762,7 +756,7 @@ ul.main li {
   margin-left: 0px;
 }
 /* line 526, ../sass/screen.scss */
-.main .rocket2 {
+#main #rocket2 {
   background: url(../images/rocket-2.png) no-repeat;
   width: 164px;
   height: 188px;
@@ -771,7 +765,7 @@ ul.main li {
   z-index: 101;
 }
 /* line 533, ../sass/screen.scss */
-.main .bling {
+#main #bling {
    background: url(../images/bling.png) no-repeat;
   width: 22px;
   height: 35px;
@@ -779,7 +773,7 @@ ul.main li {
   z-index: 102;
   margin-left: 50px;
 }
-.main .bling2 {
+#main #bling2 {
   background: url(../images/bling.png) no-repeat;
   width: 107px;
   height: 57px;
@@ -787,78 +781,78 @@ ul.main li {
   z-index: 103;
 }
 /* line 538, ../sass/screen.scss */
-.main .win98 {
+#main #win98 {
   background: url(../images/win98.png) no-repeat;
   width: 71px;
   height: 168px;
   right: 30%;
 }
-.main .people {
+#main #people {
   background: url(../images/china_peopel1.png) no-repeat;
   width: 50px;
   height: 71px;
 }
-.main .watch_more{
+#main #watch_more{
   background: url(../images/watch_more_button.png) no-repeat;
   width: 119px;
   height: 34px;
   left: 50%;
   margin-left: -56px;
 }
-.main .watch_more:hover{
+#main #watch_more:hover{
    background: url(../images/watch_more_button2.png) no-repeat;
    cursor: pointer;
 }
-.main .watch_more:active{
+#main #watch_more:active{
    background: url(../images/watch_more_button3.png) no-repeat;
    cursor: pointer;
 }
-.main .share,.main .sina,.main .wechat,.main .renren{
+#main #share,#main #sina,#main #wechat,#main #renren{
   width: 60px;
   height: 26px;
   left: 50%;
 }
-.main .sina{
+#main #sina{
   background: url(../images/sina_logo.png) no-repeat;
   width: 36px;
   height: 29px;
 }
-.main .wechat{
+#main #wechat{
   background: url(../images/wechat_logo.png) no-repeat;
   width: 35px;
   height: 29px;
 }
-.main .renren{
+#main #renren{
   background: url(../images/renren.png) no-repeat;
   width: 48px;
   height: 26px;
 }
-.main .sina:hover{
+#main #sina:hover{
   background: url(../images/sina_logo1.png) no-repeat;
 }
-.main .wechat:hover{
+#main #wechat:hover{
   background: url(../images/wechat_logo1.png) no-repeat;
 }
-.main .renren:hover{
+#main #renren:hover{
   background: url(../images/renren1.png) no-repeat;
 }
-.main .sina:active{
+#main #sina:active{
   background: url(../images/sina_logo2.png) no-repeat;
 }
-.main .wechat:active{
+#main #wechat:active{
   background: url(../images/wechat_logo2.png) no-repeat;
 }
-.main .renren:active{
+#main #renren:active{
   background: url(../images/renren2.png) no-repeat;
 }
-.main .share{margin-left: -110px;}
-.main .sina{margin-left: -50px;}
-.main .wechat{margin-left: 0px;}
-.main .renren{margin-left: 50px;}
-.main .people{
+#main #share{margin-left: -110px;}
+#main #sina{margin-left: -50px;}
+#main #wechat{margin-left: 0px;}
+#main #renren{margin-left: 50px;}
+#main #people{
   margin-top: 156px;
 }
-.main .elc_fire{
+#main #elc_fire{
    background: url(../images/elc_fire.png) no-repeat;
   width: 28px;
   height: 32px;
@@ -866,14 +860,14 @@ ul.main li {
   z-index: 102;
   margin-left: 50px;
 }
-.main .startbtn{
+#main #startbtn{
   background: url(../images/startbtn.png) no-repeat;
   width: 60px;
   height: 63px;
 }
-.main .startbtn:hover{
+#main #startbtn:hover{
  background: url(../images/startbtn1.png) no-repeat;
 };
-.main .startbtn:active{
+#main #startbtn:active{
  background: url(../images/startbtn2.png) no-repeat;
 };
