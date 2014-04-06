@@ -3,7 +3,6 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5"/>
 	<!--[if lt IE 9]>
     <style type="text/css">
@@ -19,14 +18,13 @@
 		  height: 100%;
 		  position: fixed;
 		  background-size: 100%;
-		  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#355ca4',endColorStr='#4598c7',gradientType='0');
 		  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #355ca4), color-stop(100%, #4598c7));
 		  background-image: -webkit-linear-gradient(#355ca4 , #4598c7);
 		  background-image: -moz-linear-gradient(#355ca4, #4598c7);
 		  background-image: -o-linear-gradient(#355ca4, #4598c7);
 		  background-image: linear-gradient(#355ca4, #4598c7);
 		}
-		#winlogo{
+		.winlogo{
 		  background: url(images/winlogo.png) no-repeat;
 		  width: 189px;
 		  height: 150px;
@@ -35,7 +33,7 @@
 		  margin-left: -95px;
 		  top: 30%;
 		}
-		#loadinggif{
+		.loadinggif{
 		  background: url(images/loadinggif.gif) no-repeat;
 		  width: 159px;
 		  height: 23px;
@@ -58,17 +56,17 @@
 			  background-image: -o-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
 			  background-image: linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
 			}
-			#start{
+			.start{
 				display: none;
 			}
-			#watch_more{
+			.watch_more{
 				display: none;
 			}
-			#countdown span{
+			.countdown span{
 				padding: 15px 5px;
 				margin: 0px 0px 0px 7px;
 			}	
-			#scroll
+			.scroll
 			{
                 background: url(images/scroll2.png) no-repeat;
                 width: 124px;
@@ -81,144 +79,145 @@
 </head>
 <body>
     <div id="loading">
-			<div id="winlogo"></div>
-			<div id="loadinggif"></div>
+			<div class="winlogo"></div>
+			<div class="loadinggif"></div>
 			<div id="loadingword"></div>
     </div>	
     <div id="scrolltotop" style="position:absolute;width:1px;height:1px;top:0px;"></div>
      <div id="scrolltobottom" style="position:absolute;width:1px;height:1px;bottom:0px;"></div>
-	<div class="container">
-		<div id="main">
-			<div id="countdown" class="pngfix" data-0="top:10%;" data-1000="top:-100%;">
-				<div id="jl" id="jl"></div>
+	<div id="container">
+		<div class="main">
+			<div class="countdown" data-0="top:10%;" data-1000="top:-100%;">
+				<div id="jl" class="jl"></div>
 			<center>
-				<span id="zdays"id="days">00</span> 天
-				<span id="zhours" id="hours">00</span> 小时
-				<span id="zminutes" id="minutes">00</span> 分钟
-				<span id="zseconds" id="seconds">00</span> 秒
+				<span id="zdays"class="days">00</span> 天
+				<span id="zhours" class="hours">00</span> 小时
+				<span id="zminutes" class="minutes">00</span> 分钟
+				<span id="zseconds" class="seconds">00</span> 秒
 			</center>
 			</div>
 
-			<div id="win98" class="pngfix" data-17000="top:100%;" data-19000="top:-100%;"></div>
-			<div id="scroll" class="pngfix" data-18500="opacity:0;" data-19000="opacity:1;" ></div>
-			<div id="tips_text"><p></div>
-			<div id="cld0" class="pngfix" data-17700="opacity:1;bottom:-367px" data-19000="opacity:1;bottom:50px" data-19300="opacity:1;bottom:75px" data-19500="opacity:0;bottom:25px;"></div>
-			<div id="cld1" class="pngfix" data-17800="opacity:1;bottom:-390px" data-19000="opacity:1;bottom:90px" data-19300="opacity:1;bottom:115px" data-19500="opacity:0;bottom:100px;"></div>
+			<div class="win98" data-17000="top:100%;" data-19000="top:-100%;"></div>
+			<div class="scroll pngfix" data-18500="opacity:0;" data-19000="opacity:1;" ></div>
+			<div class="tips_text"><p></div>
+			<div class="cld0 pngfix" data-17700="opacity:1;bottom:-367px" data-19000="opacity:1;bottom:50px" data-19300="opacity:1;bottom:75px" data-19500="opacity:0;bottom:25px;"></div>
+			<div class="cld1 pngfix" data-17800="opacity:1;bottom:-390px" data-19000="opacity:1;bottom:90px" data-19300="opacity:1;bottom:115px" data-19500="opacity:0;bottom:100px;"></div>
 
             
-			<div id="jg1" class="pngfix" data-16400="opacity:0;left:0%;" data-17500="opacity:1;left:-2%" data-18000="opacity:1;left:-8%" data-18700="opacity:0;left:-10%;"></div>
-			<div id="cld4" class="pngfix" data-16400="opacity:0;left:40%;" data-17500="opacity:1;left:30%" data-18000="opacity:1;left:28%" data-18700="opacity:0;left:20%;"></div>
-			<div id="jg2" class="pngfix" data-16400="opacity:0;left:-10%;" data-17500="opacity:1;left:-6%" data-18600="opacity:1;left:-3%" data-18700="opacity:0;left:0%;"></div>
-			<div id="jg3" class="pngfix" data-17400="opacity:0;left:0%;" data-18000="opacity:1;left:-5%" data-18700="opacity:0;left:-10%;"></div>
-			<div id="cld4" class="pngfix" data-16400="opacity:0;left:45%;" data-17500="opacity:1;left:55%" data-18000="opacity:1;left:65%" data-18700="opacity:0;left:70%;top:30%;"></div>
-			<div id="jg4" class="pngfix" data-17400="opacity:0;right:0%;" data-18000="opacity:1;right:-5%" data-18700="opacity:0;right:-10%;"></div>
-			<div id="cld5" class="pngfix" data-16400="opacity:0;left:30%;" data-17500="opacity:0.7;left:25%" data-18000="opacity:0.7;left:20%" data-18700="opacity:0;left:10%;top:70%;"></div>
-			<div id="sp1machine" class="pngfix" data-16000="right:100%;" data-17000="right:50%" data-17600="right:50%" data-18600="right:100%;"></div>
-			<div id="sp1" class="pngfix" data-15000="opacity:0;right:50%;top:100%;transform:rotate(-30deg);" data-15400="opacity:1;transform:rotate(0deg);right:50%;top:30%" data-16800="top:30%" data-17000="opacity:1;top:40%" data-17600="right:50%" data-18600="right:100%;"></div>
+			<div class="jg1 pngfix" data-16400="opacity:0;left:0%;" data-17500="opacity:1;left:-2%" data-18000="opacity:1;left:-8%" data-18700="opacity:0;left:-10%;"></div>
+			<div class="cld4 pngfix" data-16400="opacity:0;left:40%;" data-17500="opacity:1;left:30%" data-18000="opacity:1;left:28%" data-18700="opacity:0;left:20%;"></div>
+			<div class="jg2 pngfix" data-16400="opacity:0;left:-10%;" data-17500="opacity:1;left:-6%" data-18600="opacity:1;left:-3%" data-18700="opacity:0;left:0%;"></div>
+			<div class="jg3 pngfix" data-17400="opacity:0;left:0%;" data-18000="opacity:1;left:-5%" data-18700="opacity:0;left:-10%;"></div>
+			<div class="cld4 pngfix" data-16400="opacity:0;left:45%;" data-17500="opacity:1;left:55%" data-18000="opacity:1;left:65%" data-18700="opacity:0;left:70%;top:30%;"></div>
+			<div class="jg4 pngfix" data-17400="opacity:0;right:0%;" data-18000="opacity:1;right:-5%" data-18700="opacity:0;right:-10%;"></div>
+			<div class="cld5 pngfix" data-16400="opacity:0;left:30%;" data-17500="opacity:0.7;left:25%" data-18000="opacity:0.7;left:20%" data-18700="opacity:0;left:10%;top:70%;"></div>
+			<div class="sp1machine" data-16000="right:100%;" data-17000="right:50%" data-17600="right:50%" data-18600="right:100%;"></div>
+			<div class="sp1 pngfix" data-15000="opacity:0;right:50%;top:100%;transform:rotate(-30deg);" data-15400="opacity:1;transform:rotate(0deg);right:50%;top:30%" data-16800="top:30%" data-17000="opacity:1;top:40%" data-17600="right:50%" data-18600="right:100%;"></div>
 
-			<div id="jg5" class="pngfix" data-15000="opacity:0;top:100%;left:0" data-16000="opacity:1;top:0%;" data-17000="opacity:0;top:-100%;"></div>
-			<div id="jg6" class="pngfix" data-14700="opacity:0;top:100%;right:0;" data-15700="opacity:1;top:0%;" data-16700="opacity:0;top:-100%;"></div>
+			<div class="jg5 pngfix" data-15000="opacity:0;top:100%;left:0" data-16000="opacity:1;top:0%;" data-17000="opacity:0;top:-100%;"></div>
+			<div class="jg6 pngfix" data-14700="opacity:0;top:100%;right:0;" data-15700="opacity:1;top:0%;" data-16700="opacity:0;top:-100%;"></div>
 
-            <div id="bg1" class="pngfix" data-14000="opacity:1;left:10%;top:40%" data-16970="opacity:0;top:20%" data-13000="opacity:0;"></div>
-			<div id="bird3" class="pngfix" data-14000="left:100%;" data-16970="left:-100%;"></div>
-			<div id="bird2" class="pngfix" data-14000="left:100%;" data-17000="left:-100%;"></div>
-			<div id="bird1" class="pngfix" data-14000="left:100%;" data-17150="left:-100%;"></div>
+            <div class="bg1 pngfix" data-14000="opacity:1;left:10%;top:40%" data-16970="opacity:0;top:20%" data-13000="opacity:0;"></div>
+			<div class="bird3" data-14000="left:100%;" data-16970="left:-100%;"></div>
+			<div class="bird2" data-14000="left:100%;" data-17000="left:-100%;"></div>
+			<div class="bird1" data-14000="left:100%;" data-17150="left:-100%;"></div>
 
-			<div id="ytb1" class="pngfix" data-14000="right:100%;" data-17000="right:-100%;"></div>
-			<div id="ytb2" class="pngfix" data-14000="right:100%;" data-17300="right:-100%;"></div>
+			<div class="ytb1" data-14000="right:100%;" data-17000="right:-100%;"></div>
+			<div class="ytb2" data-14000="right:100%;" data-17300="right:-100%;"></div>
 
-			<div id="moon1" class="pngfix" data-10000="top:100%;" data-13000="top:-100%;"></div>
-			<div id="moon2" class="pngfix" data-9000="top:100%;" data-14000="top:-100%;"></div>
+			<div class="moon1" data-10000="top:100%;" data-13000="top:-100%;"></div>
+			<div class="moon2" data-9000="top:100%;" data-14000="top:-100%;"></div>
 
 			<div class="pctg" data-9000="bottom:-100%" data-11000="bottom:0;width:1269px;margin-right:0;" data-14000="width:0;margin-right:1269px;"></div>
-			<div id="bg2" class="pngfix" class="pngfix" data-5500="opacity:1;left:10%;top:40%" data-13000="opacity:0;top:20%" data-2000="opacity:0;"></div>
-			<div id="tomato" class="pngfix" data-6500="top:100%;" data-7200="top:50%;" data-7800="top:20%;" data-9000="top:-100%;"></div>
-			<div id="tomato1" class="pngfix" data-6700="transform:rotate(0deg);top:15%;opacity:0;" data-6800="opacity:1;top:18%;" data-8200="transform:rotate(20deg);top:105%;opacity:1;"></div>
-			<div id="ufo" class="pngfix" class="pngfix" data-5500="left:-100%;opacity:0;" data-6700="left:40%;opacity:1;" data-6800="left:40%;opacity:1;" data-8300="left:100%;opacity:0;"></div>
+			<div class="bg2 pngfix" data-5500="opacity:1;left:10%;top:40%" data-13000="opacity:0;top:20%" data-2000="opacity:0;"></div>
+			<div class="tomato pngfix" data-6500="top:100%;" data-7200="top:50%;" data-7800="top:20%;" data-9000="top:-100%;"></div>
+			<div class="tomato1 pngfix" data-6700="transform:rotate(0deg);top:15%;opacity:0;" data-6800="opacity:1;top:18%;" data-8200="transform:rotate(20deg);top:105%;opacity:1;"></div>
+			<div class="ufo pngfix" data-5500="left:-100%;opacity:0;" data-6700="left:40%;opacity:1;" data-6800="left:40%;opacity:1;" data-8300="left:100%;opacity:0;"></div>
 			
-			<div id="vista" class="pngfix" data-8000="transform:rotate(-40deg);top:100%;opacity:0;" data-9000="transform:rotate(0deg);top:55%;opacity:1;" data-12000="top:55%;" data-13000="top:100%;"></div>
-			<div id="win7" class="pngfix" data-2000="top:-100%;" data-4000="top:40%;opacity:1;" data-4500="top:45%;" data-5000="top:100%;"></div>
+			<div class="vista pngfix" data-8000="transform:rotate(-40deg);top:100%;opacity:0;" data-9000="transform:rotate(0deg);top:55%;opacity:1;" data-12000="top:55%;" data-13000="top:100%;"></div>
+			<div class="win7" data-2000="top:-100%;" data-4000="top:40%;" data-4500="top:45%;" data-5000="top:100%;"></div>
 
-			<div id="sp3machine" class="pngfix" data-7400="left:100%;" data-8400="left:50%" data-9400="left:100%;"></div>
-			<div id="sp3" class="pngfix" data-5500="opacity:0;right:50%;top:100%;transform:rotate(-30deg);" data-6000="opacity:1;transform:rotate(0deg);right:50%;top:40%" data-7400="opacity:1;transform:rotate(0deg);left:50%;" data-8400="opacity:1;left:50%;" data-9400="opacity:1;left:100%;"></div>
+			<div class="sp3machine" data-7400="left:100%;" data-8400="left:50%" data-9400="left:100%;"></div>
+			<div class="sp3 pngfix" data-5500="opacity:0;right:50%;top:100%;transform:rotate(-30deg);" data-6000="opacity:1;transform:rotate(0deg);right:50%;top:40%" data-7400="opacity:1;transform:rotate(0deg);left:50%;" data-8400="opacity:1;left:50%;" data-9400="opacity:1;left:100%;"></div>
 
-			<div id="sp2machine" class="pngfix" data-14400="left:100%;" data-15400="left:50%" data-16400="left:100%;"></div>
-			<div id="sp2" class="pngfix" data-13000="opacity:0;right:50%;top:100%;transform:rotate(-30deg);" data-13400="opacity:1;transform:rotate(0deg);right:50%;top:30%" data-14400="opacity:1;transform:rotate(0deg);left:50%;" data-15400="opacity:1;left:50%;" data-16400="opacity:1;left:100%;"></div>
+			<div class="sp2machine" data-14400="left:100%;" data-15400="left:50%" data-16400="left:100%;"></div>
+			<div class="sp2 pngfix" data-13000="opacity:0;right:50%;top:100%;transform:rotate(-30deg);" data-13400="opacity:1;transform:rotate(0deg);right:50%;top:30%" data-14400="opacity:1;transform:rotate(0deg);left:50%;" data-15400="opacity:1;left:50%;" data-16400="opacity:1;left:100%;"></div>
 
-			<div id="bluescreen" data-4500="opacity:0.7;top:100%" data-5500="opacity:0.7;top:0%" data-6200="opacity:0.7;top:-100%">
-				<div id="text"></div>
+			<div class="bluescreen pngfix" data-4500="opacity:0.7;top:100%" data-5500="opacity:0.7;top:0%" data-6200="opacity:0.7;top:-100%">
+				<div class="text"></div>
 			</div>
-			<div id="people1" class="pngfix" data-1000="opacity:0;top:60%;transform:rotate(90deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:29%;opacity:0;"></div>
-			<div id="people2" class="pngfix" data-1000="opacity:0;top:40%;transform:rotate(-90deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:65%;opacity:0;"></div>
-			<div id="people3" class="pngfix" data-1000="opacity:0;top:20%;transform:rotate(20deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:70%;opacity:0;"></div>
-			<div id="people4" class="pngfix" data-1000="opacity:0;top:70%;transform:rotate(-40deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:34%;opacity:0;"></div>
+			<div class="people pngfix" data-1000="opacity:0;top:60%;transform:rotate(90deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:29%;opacity:0;"></div>
+			<div class="people pngfix" data-1000="opacity:0;top:40%;transform:rotate(-90deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:65%;opacity:0;"></div>
+			<div class="people pngfix" data-1000="opacity:0;top:20%;transform:rotate(20deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:70%;opacity:0;"></div>
+			<div class="people pngfix" data-1000="opacity:0;top:70%;transform:rotate(-40deg);" data-2000="opacity:1;top:40%;transform:rotate(0deg)" data-3000="top:-100%;left:34%;opacity:0;"></div>
 
-			<div id="table" class="pngfix" data-1000="opacity:1;top:110%" data-2000="opacity:1;top:40%" data-3000="top:-100%"></div>
+			<div class="table" data-1000="top:110%" data-2000="top:40%" data-3000="top:-100%"></div>
 
-			<div id="jgend" class="pngfix" data-0="opacity:1;top:100%" data-2000="opacity:1;top:-10%" data-3000="top:-100%"></div>
-			<div id="star" data-0="opacity:1;top:100%" data-2000="opacity:1;top:-10%" data-3000="top:-100%"></div>
-			<div id="footer" class="pngfix" data-0="opacity:1;top:54%" data-2000="top:-60%"></div>
-			<div id="hellobye" class="pngfix" data-0="opacity:1;top:40%" data-600="opacity:0" data-1000="opacity:0;top:60%" data-1500="opacity:0;top:70%"></div>
-			<div id="watch_more" class="pngfix" data-0="opacity:1;top:50%" data-200="opacity:0" data-1000="opacity:0;top:70%" data-1500="opacity:0;top:80%;" onclick="window.scrollTo(0,19000);"></div>
-			<div id="share" class="pngfix" data-0="opacity:1;top:86%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"><img src="images/shareto.png"/></div>
-			<div id="sina" class="pngfix" data-0="opacity:1;top:85%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"></div>
-			<div id="wechat" class="pngfix" data-0="opacity:1;top:85%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"></div>
-			<div id="renren" class="pngfix" data-0="opacity:1;top:85%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"></div>
-			<!-- <div id="float" data-0="opacity:1;top:100%;transform:rotate(20deg);" data-1000="opacity:1;top:60%;transform:rotate(0deg);" data-2000="opacity:1;top:40%;transform:rotate(20deg);" data-3000="opacity:0;top:70%"></div> -->
+			<div class="jgend pngfix" data-0="opacity:1;top:100%" data-2000="opacity:1;top:-10%" data-3000="top:-100%"></div>
+			<div class="star pngfix" data-0="opacity:1;top:100%" data-2000="opacity:1;top:-10%" data-3000="top:-100%"></div>
+			<div class="footer" data-0="opacity:1;top:54%" data-2000="top:-60%"></div>
+			<div id="hellobye pngfix" class="hellobye" data-0="opacity:1;top:40%" data-600="opacity:0" data-1000="opacity:0;top:60%" data-1500="opacity:0;top:70%"></div>
+			<div class="watch_more pngfix" data-0="opacity:1;top:50%" data-200="opacity:0" data-1000="opacity:0;top:70%" data-1500="opacity:0;top:80%;" onclick="window.scrollTo(0,19000);"></div>
+			<div class="share pngfix" data-0="opacity:1;top:86%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"><img src="images/shareto.png"/></div>
+			<div class="sina pngfix" data-0="opacity:1;top:85%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"></div>
+			<div class="wechat pngfix" data-0="opacity:1;top:85%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"></div>
+			<div class="renren pngfix" data-0="opacity:1;top:85%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"></div>
+			<!-- <div class="float" data-0="opacity:1;top:100%;transform:rotate(20deg);" data-1000="opacity:1;top:60%;transform:rotate(0deg);" data-2000="opacity:1;top:40%;transform:rotate(20deg);" data-3000="opacity:0;top:70%"></div> -->
 
-			<!-- <div id="float2" data-0="opacity:1;top:100%;transform:rotate(20deg);" data-1000="opacity:1;top:30%;transform:rotate(30deg);" data-2000="opacity:1;top:40%;transform:rotate(20deg);" data-3000="opacity:0;top:50%"></div> -->
-			<!-- <div id="float4" data-0="opacity:0;top:50%;transform:rotate(20deg);" data-1000="opacity:1;top:40%;transform:rotate(30deg);" data-2000="opacity:1;top:50%;transform:rotate(20deg);" data-3000="opacity:0;top:40%"></div> -->
+			<!-- <div class="float2" data-0="opacity:1;top:100%;transform:rotate(20deg);" data-1000="opacity:1;top:30%;transform:rotate(30deg);" data-2000="opacity:1;top:40%;transform:rotate(20deg);" data-3000="opacity:0;top:50%"></div> -->
+			<!-- <div class="float4" data-0="opacity:0;top:50%;transform:rotate(20deg);" data-1000="opacity:1;top:40%;transform:rotate(30deg);" data-2000="opacity:1;top:50%;transform:rotate(20deg);" data-3000="opacity:0;top:40%"></div> -->
 
-			<!-- <div id="float4" data-0="left:80%;opacity:0;top:20%;transform:rotate(20deg);" data-1000="opacity:1;top:30%;transform:rotate(0deg);" data-2000="opacity:1;top:40%;transform:rotate(20deg);" data-3000="opacity:0;top:20%"></div>
-			<div id="float3" data-0="left:20%;opacity:0;top:20%;transform:rotate(20deg);" data-1000="opacity:1;top:30%;transform:rotate(30deg);" data-2000="opacity:1;top:20%;transform:rotate(20deg);" data-3000="opacity:0;top:30%"></div> -->
+			<!-- <div class="float4" data-0="left:80%;opacity:0;top:20%;transform:rotate(20deg);" data-1000="opacity:1;top:30%;transform:rotate(0deg);" data-2000="opacity:1;top:40%;transform:rotate(20deg);" data-3000="opacity:0;top:20%"></div>
+			<div class="float3" data-0="left:20%;opacity:0;top:20%;transform:rotate(20deg);" data-1000="opacity:1;top:30%;transform:rotate(30deg);" data-2000="opacity:1;top:20%;transform:rotate(20deg);" data-3000="opacity:0;top:30%"></div> -->
 
-			<div id="virus1" class="pngfix" data-0="opacity:0;left:0%;top:100%;transform:rotate(20deg);" data-1000="left:10%;opacity:1;top:30%;transform:rotate(30deg);" data-2000="left:0%;opacity:0;top:40%;transform:rotate(20deg);"></div>
-			<div id="virus2" class="pngfix" data-0="left:0%;opacity:0;top:50%;transform:rotate(20deg);" data-1000="left:10%;opacity:1;top:40%;transform:rotate(30deg);" data-2000="left:0%;opacity:0;top:50%;transform:rotate(20deg);"></div>
-			<div id="virus3" class="pngfix" data-0="right:0%;opacity:0;top:50%;transform:rotate(20deg);" data-1000="right:10%;opacity:1;top:40%;transform:rotate(30deg);" data-2000="right:0%;opacity:0;top:50%;transform:rotate(20deg);"></div>
+			<div class="virus1 pngfix" data-0="opacity:0;left:0%;top:100%;transform:rotate(20deg);" data-1000="left:10%;opacity:1;top:30%;transform:rotate(30deg);" data-2000="left:0%;opacity:0;top:40%;transform:rotate(20deg);"></div>
+			<div class="virus2 pngfix" data-0="left:0%;opacity:0;top:50%;transform:rotate(20deg);" data-1000="left:10%;opacity:1;top:40%;transform:rotate(30deg);" data-2000="left:0%;opacity:0;top:50%;transform:rotate(20deg);"></div>
+			<div class="virus3 pngfix" data-0="right:0%;opacity:0;top:50%;transform:rotate(20deg);" data-1000="right:10%;opacity:1;top:40%;transform:rotate(30deg);" data-2000="right:0%;opacity:0;top:50%;transform:rotate(20deg);"></div>
 
-			<div id="rocket" data-1000="top:110%" data-2000="top:38%" 15400="top:30%" data-16800="top:30%" data-17000="top:40%;" data-19500="top:40%;" data-20000="top:100%;">
-			    <div id="rocket2"></div>
-				<div id="fire" data-2500="height:0px;" data-3000="height:50px;" data-3500="height:80px;" data-4000="height:154px;" data-4500="height:80px;" data-5000="height:154px;" data-5500="height:80px;" data-6000="height:154px;" data-6500="height:80px;" data-7000="height:154px;" data-7500="height:80px;" data-8000="height:154px;" data-8500="height:80px;" data-9000="height:154px;" data-9500="height:80px;" data-10000="height:154px;" data-10500="height:80px;" data-11000="height:154px;" data-11500="height:80px;" data-12000="height:154px;" data-12500="height:80px;" data-13000="height:154px;" data-13500="height:80px;" data-14000="height:154px;" data-14500="height:80px;" data-15000="height:154px;" data-15500="height:80px;" data-16000="height:154px;" data-16500="height:80px;" data-17000="height:154px;" data-18500="height:80px;" data-19000="height:0;" style="z-index:100;"></div>
+			<div class="rocket" data-1000="top:110%" data-2000="top:38%" 15400="top:30%" data-16800="top:30%" data-17000="top:40%;" data-19500="top:40%;" data-20000="top:100%;">
+			    <div class="rocket2"></div>
+				<div class="fire" data-2500="height:0px;" data-3000="height:50px;" data-3500="height:80px;" data-4000="height:154px;" data-4500="height:80px;" data-5000="height:154px;" data-5500="height:80px;" data-6000="height:154px;" data-6500="height:80px;" data-7000="height:154px;" data-7500="height:80px;" data-8000="height:154px;" data-8500="height:80px;" data-9000="height:154px;" data-9500="height:80px;" data-10000="height:154px;" data-10500="height:80px;" data-11000="height:154px;" data-11500="height:80px;" data-12000="height:154px;" data-12500="height:80px;" data-13000="height:154px;" data-13500="height:80px;" data-14000="height:154px;" data-14500="height:80px;" data-15000="height:154px;" data-15500="height:80px;" data-16000="height:154px;" data-16500="height:80px;" data-17000="height:154px;" data-18500="height:80px;" data-19000="height:0;" style="z-index:100;"></div>
 				
-				<div id="hh1" data-13800="height:40px;" data-14500="height:0px;"></div>
-				<div id="hh2" data-13700="width:44px;" data-14200="width:0px;"></div>
-				<div id="elc_fire" class="pngfix" data-13000="margin-top:30px;margin-left:80px;opacity:0;" data-13100="opacity:1;" data-13200="opacity:0;" data-13300="opacity:1;" data-13400="opacity:0;" data-13500="opacity:1;" data-13600="opacity:0;" data-13700="opacity:1;" data-13800="opacity:0;" data-13900="opacity:1;" data-14200="opacity:0;"></div>
-				<div id="hh3" data-8500="height:27px;" data-9200="height:0px;"></div>
-				<div id="hh4" data-8500="opacity:1;" data-9200="opacity:0;"></div>
-				<div id="hh5" data-8500="opacity:1;" data-9200="opacity:0;"></div>
-				<!-- <div id="ie6" data-8200="height:122px;" data-8800="height:0px;"><img data-8200="height:122px;width:41px;top:-20%;left:0%;" data-8800="height:0px;width:0px;top:-50px;left:-40%;" src="images/ie6.png"/>
+				<div class="hh1" data-13800="height:40px;" data-14500="height:0px;"></div>
+				<div class="hh2" data-13700="width:44px;" data-14200="width:0px;"></div>
+				<div class="elc_fire pngfix" data-13000="margin-top:30px;margin-left:80px;opacity:0;" data-13100="opacity:1;" data-13200="opacity:0;" data-13300="opacity:1;" data-13400="opacity:0;" data-13500="opacity:1;" data-13600="opacity:0;" data-13700="opacity:1;" data-13800="opacity:0;" data-13900="opacity:1;" data-14200="opacity:0;"></div>
+				<div class="hh3 pngfix" data-8500="height:27px;" data-9200="height:0px;"></div>
+				<div class="hh4 pngfix" data-8500="opacity:1;" data-9200="opacity:0;"></div>
+				<div class="hh5 pngfix" data-8500="opacity:1;" data-9200="opacity:0;"></div>
+				<!-- <div class="ie6" data-8200="height:122px;" data-8800="height:0px;"><img data-8200="height:122px;width:41px;top:-20%;left:0%;" data-8800="height:0px;width:0px;top:-50px;left:-40%;" src="images/ie6.png"/>
 				</div> -->
-				<div id="door" class="pngfix" data-7600="top:40%;left:-30%;transform:rotate(50deg);opacity:0;" data-8800="top:10%;left:-20%;transform:rotate(20deg);opacity:1;" data-9000="top:0%;left:0%;transform:rotate(0deg);opacity:1;" data-20000="opacity:1;top:0%;left:0%;transform:rotate(0deg);;width:15px;"></div>
-				<div id="elc_fire" class="pngfix" data-7600="margin-top:80px;margin-left:35px;opacity:0;" data-7700="opacity:1;" data-7800="opacity:0;" data-7900="opacity:1;" data-8000="opacity:0;" data-8100="opacity:1;" data-8200="opacity:0;" data-8300="opacity:1;" data-8400="opacity:0;" data-8500="opacity:1;" data-8600="opacity:0;"></div>
-				<div id="elc_fire" class="pngfix" data-4500="margin-top:90px;margin-left:45px;opacity:0;" data-4600="opacity:1;" data-4700="opacity:0;" data-4800="opacity:1;" data-4900="opacity:0;" data-5000="opacity:1;" data-5100="opacity:0;" data-5200="opacity:1;" data-5300="opacity:0;" data-5400="opacity:1;" data-5500="opacity:0;"></div>
-				<div id="bling1" class="pngfix" data-17000="opacity:0;transform:rotate(-30deg);" data-18000="opacity:1;" data-19500="opacity:0;transform:rotate(30deg);"></div>
-				<div id="bling3" class="pngfix" data-17000="margin-top:90px;margin-left:110px;opacity:0;transform:rotate(-60deg);" data-18000="opacity:1;" data-19000="opacity:0;transform:rotate(20deg);"></div>
+				<div class="door pngfix" data-7600="top:40%;left:-30%;transform:rotate(50deg);opacity:0;" data-8800="top:10%;left:-20%;transform:rotate(20deg);opacity:1;" data-9000="top:0%;left:0%;transform:rotate(0deg);opacity:1;" data-20000="opacity:1;top:0%;left:0%;transform:rotate(0deg);;width:15px;"></div>
+				<div class="elc_fire pngfix" data-7600="margin-top:80px;margin-left:35px;opacity:0;" data-7700="opacity:1;" data-7800="opacity:0;" data-7900="opacity:1;" data-8000="opacity:0;" data-8100="opacity:1;" data-8200="opacity:0;" data-8300="opacity:1;" data-8400="opacity:0;" data-8500="opacity:1;" data-8600="opacity:0;"></div>
+				<div class="elc_fire pngfix" data-4500="margin-top:90px;margin-left:45px;opacity:0;" data-4600="opacity:1;" data-4700="opacity:0;" data-4800="opacity:1;" data-4900="opacity:0;" data-5000="opacity:1;" data-5100="opacity:0;" data-5200="opacity:1;" data-5300="opacity:0;" data-5400="opacity:1;" data-5500="opacity:0;"></div>
+				<div class="bling pngfix" data-17000="opacity:0;transform:rotate(-30deg);" data-18000="opacity:1;" data-19500="opacity:0;transform:rotate(30deg);"></div>
+				<div class="bling pngfix" data-17000="margin-top:90px;margin-left:110px;opacity:0;transform:rotate(-60deg);" data-18000="opacity:1;" data-19000="opacity:0;transform:rotate(20deg);"></div>
 			</div>
 			
 
-			<div id="table-box" data-1000="top:120%" data-2000="top:40%" data-3000="top:-100%"></div>
+			<div class="table-box" data-1000="top:120%" data-2000="top:40%" data-3000="top:-100%"></div>
 
 
-			<div id="grd" class="pngfix" data-18000="opacity:1;bottom:-300px" data-19000="opacity:1;bottom:0" data-19700="opacity:1;bottom:0px" data-20000="opacity:0;bottom:-100px;"></div>
+			<div class="grd pngfix" data-18000="opacity:1;bottom:-300px" data-19000="opacity:1;bottom:0" data-19700="opacity:1;bottom:0px" data-20000="opacity:0;bottom:-100px;"></div>
 
-			<div id="cld3" class="pngfix" class="pngfix" data-18000="opacity:1;bottom:-400px" data-19000="opacity:1;bottom:100px" data-19500="opacity:1;bottom:100px" data-19700="opacity:0;bottom:80px;"></div>
-			<div id="start" class="pngfix" data-17700="opacity:1;bottom:-367px" data-19000="opacity:1;bottom:75px" data-19300="opacity:1;bottom:75px" data-19500="opacity:0;bottom:25px;">
-				<a href="#scrolltotop"><div  id="startbtn" id="gototop"></div></a>
+			<div class="cld3 pngfix" data-18000="opacity:1;bottom:-400px" data-19000="opacity:1;bottom:100px" data-19500="opacity:1;bottom:100px" data-19700="opacity:0;bottom:80px;"></div>
+
+			<div class="start pngfix" data-17700="opacity:1;bottom:-367px" data-19000="opacity:1;bottom:75px" data-19300="opacity:1;bottom:75px" data-19500="opacity:0;bottom:25px;">
+				<a href="#scrolltotop"><div  class="startbtn" id="gototop"></div></a>
 			</div>
 
-			<!-- <div id="date-2001" data-18200="opacity:0;" data-18500="opacity:1;" data-19000="opacity:0;"></div> -->
-			<div id="date-2002" class="pngfix" data-16500="opacity:0;" data-17500="opacity:1;" data-17700="opacity:1;" data-18200="opacity:0;"></div>
-			<div id="date-2004" class="pngfix" data-13500="opacity:0;" data-14000="opacity:1;" data-16000="opacity:1;" data-17000="opacity:0;"></div>
-			<div id="date-2007" class="pngfix" data-8700="opacity:0;" data-9500="opacity:1;" data-13500="opacity:1;" data-14500="opacity:0;"></div>
+			<!-- <div class="date-2001" data-18200="opacity:0;" data-18500="opacity:1;" data-19000="opacity:0;"></div> -->
+			<div class="date-2002 pngfix" data-16500="opacity:0;" data-17500="opacity:1;" data-17700="opacity:1;" data-18200="opacity:0;"></div>
+			<div class="date-2004 pngfix" data-13500="opacity:0;" data-14000="opacity:1;" data-16000="opacity:1;" data-17000="opacity:0;"></div>
+			<div class="date-2007 pngfix" data-8700="opacity:0;" data-9500="opacity:1;" data-13500="opacity:1;" data-14500="opacity:0;"></div>
 
-			<div id="date-2008" class="pngfix" data-8000="opacity:0;" data-8500="opacity:1;" data-9500="opacity:0;"></div>
-			<div id="date-2008-2" class="pngfix" data-6300="opacity:0;" data-6700="opacity:1;" data-7500="opacity:0;"></div>
-			<div id="date-2009" class="pngfix" data-5600="opacity:0;" data-6200="opacity:1;" data-6700="opacity:0;"></div>
-			<div id="date-2011" class="pngfix" data-3500="opacity:0;" data-4000="opacity:1;" data-5000="opacity:0;"></div>
-			<div id="date-2013" class="pngfix" data-2700="opacity:0;" data-3500="opacity:1;" data-4000="opacity:0;"></div>
-			<div class="pctg2" data-2700="bottom:-100%" data-4000="bottom:0;width:1269px;margin-right:0;" data-6000="width:0;margin-right:1269px;"></div>
-			<div id="date-2014" class="pngfix" data-1000="opacity:0;" data-2000="opacity:1;" data-2800="opacity:0;"></div>
-			<div id="cmt0" class="pngfix" data-18500="opacity:0;" data-19000="opacity:1;" data-19500="opacity:0;" ></div>
+			<div class="date-2008 pngfix" data-8000="opacity:0;" data-8500="opacity:1;" data-9500="opacity:0;"></div>
+			<div class="date-2008-2 pngfix" data-6300="opacity:0;" data-6700="opacity:1;" data-7500="opacity:0;"></div>
+			<div class="date-2009 pngfix" data-5600="opacity:0;" data-6200="opacity:1;" data-6700="opacity:0;"></div>
+			<div class="date-2011 pngfix" data-3500="opacity:0;" data-4000="opacity:1;" data-5000="opacity:0;"></div>
+			<div class="date-2013 pngfix" data-2700="opacity:0;" data-3500="opacity:1;" data-4000="opacity:0;"></div>
+			<div class="pctg2 pngfix" data-2700="bottom:-100%;opacity:0;" data-4000="bottom:0;width:1269px;margin-right:0;opacity:0.5;" data-6000="width:0;margin-right:1269px;opacity:0;"></div>
+			<div class="date-2014 pngfix" data-1000="opacity:0;" data-2000="opacity:1;" data-2800="opacity:0;"></div>
+			<div class="cmt0 pngfix" data-18500="opacity:0;" data-19000="opacity:1;" data-19500="opacity:0;" ></div>
 
 		</div>
 	</div>
@@ -227,16 +226,21 @@
     <script type="text/javascript" src="script/jquery.scrollTo-1.4.1-min.js"></script>
 	<script type="text/javascript" src="script/easing.js"></script>
 	<script type="text/javascript" src="script/skrollr.js"></script>
+	<script>
+	var pngfix = function() {}
+	</script>
+
 	<!--[if lt IE 9]>
     <script type="text/javascript" src="script/skrollr.ie.js"></script>
-
-	<script>
-	$(".pngfix").each(function(){
-		var c = $(this);
-		var url = c.css('background-image').replace('url("','src=\'').replace('")','\'');
-		c.append('<img '+url+' style="filter: progid:DXImageTransform.Microsoft.AlphaImageLoader('+url+');"/>');
-		c.css('background','transparent');
-	})
+    <script>
+    var pngfix = function() { 
+		$(".pngfix").each(function(){
+			var c = $(this);
+			var url = c.css('background-image').replace('url("','src=\'').replace('")','\'');
+			c.append('<img '+url+' style="filter: progid:DXImageTransform.Microsoft.AlphaImageLoader('+url+');"/>');
+			c.css('background','transparent');
+		})
+	}
 	</script>
     <![endif]-->
 	<script type="text/javascript">
@@ -318,6 +322,7 @@
 
 
 		function timelyFun(){
+			pngfix();
 			window.scrollTo(0,0);
 			superMagic.animateTo(19000, {easing: 'outCubic', duration: 1});
 			document.getElementById('loading').style.display = 'none';
