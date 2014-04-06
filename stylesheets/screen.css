@@ -80,6 +80,7 @@ body {
   font-family: Courier, 'Hiragino Sans GB', 微软雅黑, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 25px;
+  overflow-x: hidden;
 }
 
 /* line 21, ../sass/screen.scss */
