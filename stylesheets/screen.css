@@ -212,11 +212,10 @@ ul.main li {
   position: absolute;
 }
 .scroll{
-  background: url(../images/scroll.png) no-repeat;
-  width: 39px;
-  height: 24px;
-  left: 50%;
-  margin-left: -20px;
+  background: url(images/scroll2.png) no-repeat;
+  width: 124px;
+  height: 59px;
+  margin-left: -62px;
   top: 20px;
 }
 /* line 113, ../sass/screen.scss */
