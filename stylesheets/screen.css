@@ -79,7 +79,7 @@ body {
 }
 
 /* line 30, ../sass/screen.scss */
-.countdown .jl {
+.countdown #jl {
   background: url(../images/jl.png) no-repeat;
   width: 473px;
   height: 25px;
@@ -586,7 +586,7 @@ ul.main li {
   margin-left: -530px;
 }
 /* line 419, ../sass/screen.scss */
-.main .hellobye {
+.main #hellobye {
   background: url(../images/hellobye.png) no-repeat;
   width: 436px;
   height: 42px;

@@ -87,9 +87,8 @@
 	<div id="container">
 		<div class="main">
 			<div class="countdown" data-0="top:10%;" data-1000="top:-100%;">
-				<div id="jl" class="jl"></div>
+				<div id="jl"></div>
 			<center>
-				<span id="zdays"class="days">00</span> 天
 				<span id="zhours" class="hours">00</span> 小时
 				<span id="zminutes" class="minutes">00</span> 分钟
 				<span id="zseconds" class="seconds">00</span> 秒
@@ -155,7 +154,7 @@
 			<div class="jgend" data-0="top:100%" data-2000="top:-10%" data-3000="top:-100%"></div>
 			<div class="star" data-0="top:100%" data-2000="top:-10%" data-3000="top:-100%"></div>
 			<div class="footer" data-0="opacity:1;top:54%" data-2000="top:-60%"></div>
-			<div id="hellobye pngfix" class="hellobye" data-0="opacity:1;top:40%" data-600="opacity:0" data-1000="opacity:0;top:60%" data-1500="opacity:0;top:70%"></div>
+			<div id="hellobye" class="hellobye pngfix" data-0="opacity:1;top:40%" data-600="opacity:0" data-1000="opacity:0;top:60%" data-1500="opacity:0;top:70%"></div>
 			<div class="watch_more pngfix" data-0="opacity:1;top:50%" data-200="opacity:0" data-1000="opacity:0;top:70%" data-1500="opacity:0;top:80%;" onclick="window.scrollTo(0,19000);"></div>
 			<div class="share pngfix" data-0="opacity:1;top:86%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"><img src="images/shareto.png"/></div>
 			<div class="sina pngfix" data-0="opacity:1;top:85%" data-200="opacity:0" data-1000="opacity:0;top:80%" data-1500="opacity:0;top:100%;"></div>
@@ -259,9 +258,21 @@
 			year	: 2014
 		};
         
-		setInterval(function() {
+        timer = setInterval("takeCount()",1000);
+
+        function clearTimer() {
+        	clearInterval(timer);
+        	document.getElementById("zhours").innerHTML= "00";
+			document.getElementById("zminutes").innerHTML= "00";
+			document.getElementById("zseconds").innerHTML= "00";
+
+			document.getElementById("jl").style.background = "url(images/jl2.png)";
+
+        }
+
+		function takeCount() {
 			
-			d2 = new Date(2014,3,9,0,0,0);
+			d2 = new Date(2014,3,9,1,11,0);
 			d1 = new Date().getTime();
 			difference = (d2-d1)/1000;
 			countdown.days 		= Math.floor(difference / (60 * 60 * 24));
@@ -282,27 +293,20 @@
 			$('.countdown .hours').html(countdown.hours);
 			$('.countdown .minutes').html(countdown.minutes);
 			$('.countdown .seconds').html(countdown.seconds);*/
-			if(countdown.days.toString()=="00" && countdown.hours.toString() == "00" && countdown.minutes.toString() == "00" && countdown.seconds.toString()=="00")
-				{     
-					  var hellobye = document.getElementById("hellobye");
-			          hellobye.style.background = "url(images/hellobye2.png)";
+			if(countdown.hours.toString() == "00" && countdown.minutes.toString() == "00" && countdown.seconds.toString()=="00"){
 
-			          var jl = document.getElementById("jl");
-			          jl.style.background = "url(images/jl2.png)";
-
-
-
-			     }
+					clearTimer();
+			     	
+			}
 			else{
-                 document.getElementById("zdays").innerHTML=countdown.days;
 			     document.getElementById("zhours").innerHTML=countdown.hours;
 			     document.getElementById("zminutes").innerHTML=countdown.minutes;
 			     document.getElementById("zseconds").innerHTML=countdown.seconds;
 
-		         }
+		    }
 			
 			
-		}, 1000);
+		}
 
 
 		function goTop() {
