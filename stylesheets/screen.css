@@ -64,9 +64,8 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 25px;
   background: #222129;
-  overflow-x:none;
   background: url(../images/bg-x.png) repeat-x;
-  background-size: 100% 100%;
+  /*background-size: 100% 100%;*/
 }
 
 /* line 21, ../sass/screen.scss */
@@ -140,6 +139,8 @@ body {
   width: 100%;
   height: 100%;
   background: #222129;
+  background: url(../images/bg-x.png) repeat-x;
+  background-size: 100% 100%;
 }
 
 /* line 83, ../sass/screen.scss */
