@@ -63,7 +63,7 @@ body {
   font-family: Courier, 'Hiragino Sans GB', 微软雅黑, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 25px;
-  background:#222129;
+  background: #222129;
   overflow-x:none;
   background: url(../images/bg-x.png) repeat-x;
 }
