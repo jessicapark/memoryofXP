@@ -495,7 +495,7 @@ ul.main li {
 }
 /* line 324, ../sass/screen.scss */
 .main .date-2001 {
-  background-position: 0 -1477px;
+  background: url(../images/date-2001.png) no-repeat;
   width: 146px;
   height: 180px;
   margin-top: 20px;
@@ -503,7 +503,7 @@ ul.main li {
 }
 /* line 331, ../sass/screen.scss */
 .main .date-2002 {
-  background-position: 0 -937px;
+  background: url(../images/date-2002.png) no-repeat;
   width: 169px;
   height: 180px;
   margin-top: 20px;
@@ -511,7 +511,7 @@ ul.main li {
 }
 /* line 338, ../sass/screen.scss */
 .main .date-2004 {
-  background-position: 0 -397px;
+  background: url(../images/date-2004.png) no-repeat;
   width: 200px;
   height: 180px;
   margin-top: 20px;
@@ -519,7 +519,7 @@ ul.main li {
 }
 /* line 345, ../sass/screen.scss */
 .main .date-2007 {
-  background-position: 0 0;
+  background: url(../images/date-2007.png) no-repeat;
   width: 184px;
   height: 217px;
   margin-top: 20px;
@@ -527,7 +527,7 @@ ul.main li {
 }
 /* line 352, ../sass/screen.scss */
 .main .date-2008 {
-  background-position: 0 -217px;
+  background: url(../images/date-2008.png) no-repeat;
   width: 189px;
   height: 180px;
   margin-top: 20px;
@@ -535,7 +535,7 @@ ul.main li {
 }
 /* line 359, ../sass/screen.scss */
 .main .date-2008-2 {
-  background-position: 0 -757px;
+  background: url(../images/date-2008-2.png) no-repeat;
   width: 300px;
   height: 180px;
   margin-top: 20px;
@@ -543,7 +543,7 @@ ul.main li {
 }
 /* line 366, ../sass/screen.scss */
 .main .date-2009 {
-  background-position: 0 -1117px;
+  background: url(../images/date-2009.png) no-repeat;
   width: 250px;
   height: 180px;
   margin-top: 20px;
@@ -551,7 +551,7 @@ ul.main li {
 }
 /* line 373, ../sass/screen.scss */
 .main .date-2011 {
-  background-position: 0 -1297px;
+  background: url(../images/date-2011.png) no-repeat;
   width: 280px;
   height: 180px;
   margin-top: 20px;
@@ -559,21 +559,15 @@ ul.main li {
 }
 /* line 380, ../sass/screen.scss */
 .main .date-2013 {
-  background-position: 0 -577px;
+  background: url(../images/date-2013.png) no-repeat;
   width: 302px;
   height: 180px;
-  margin-top: 20px;
-  margin-left: 20px;
-}.main .date-2014 {
-  background: url(../images/date-2014.png) no-repeat;
-  width: 296px;
-  height: 181px;
   margin-top: 20px;
   margin-left: 20px;
 }
 /* line 387, ../sass/screen.scss */
 .main .bluescreen {
-  background-color: #2a56e7;
+  background: #2a56e7;
   width: 100%;
   height: 100%;
 }
