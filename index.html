@@ -1,18 +1,17 @@
-
+<!DOCTYPE HTML>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	<meta name="viewport" content="target-densitydpi=device-dpi, 
-    user-scalable=no,width=device-width,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5"/>
+	<meta name="viewport" content="width=device-width,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5"/>
     <meta name="apple-mobile-web-app-capable" content="yes" />    
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 	<meta name="format-detection" content="telephone=yes"/>
 	<meta name="msapplication-tap-highlight" content="no" />
 	<!--[if lt IE 9]>
     <style type="text/css">
-		body{
+		#container{
 			background: url(images/bg-x.png) repeat-x;
 		}
     </style>
@@ -60,7 +59,8 @@
 				padding: 15px 5px;
 				margin: 0px 0px 0px 7px;
 			}	
-			.scroll{
+			.scroll
+			{
                 background: url(images/scroll2.png) no-repeat;
                 width: 124px;
                 height: 59px;
@@ -170,7 +170,7 @@
 				<div class="hh3 pngfix" data-8500="height:27px;" data-9200="height:0px;"></div>
 				<div class="hh4 pngfix" data-8500="opacity:1;" data-9200="opacity:0;"></div>
 				<div class="hh5 pngfix" data-8500="opacity:1;" data-9200="opacity:0;"></div>
-
+				
 				<div class="door pngfix" data-7600="top:40%;left:-30%;transform:rotate(50deg);opacity:0;" data-8800="top:10%;left:-20%;transform:rotate(20deg);opacity:1;" data-9000="top:0%;left:0%;transform:rotate(0deg);opacity:1;" data-20000="opacity:1;top:0%;left:0%;transform:rotate(0deg);;width:15px;"></div>
 				<div class="elc_fire pngfix" data-7600="margin-top:80px;margin-left:35px;opacity:0;" data-7700="opacity:1;" data-7800="opacity:0;" data-7900="opacity:1;" data-8000="opacity:0;" data-8100="opacity:1;" data-8200="opacity:0;" data-8300="opacity:1;" data-8400="opacity:0;" data-8500="opacity:1;" data-8600="opacity:0;"></div>
 				<div class="elc_fire pngfix" data-4500="margin-top:90px;margin-left:45px;opacity:0;" data-4600="opacity:1;" data-4700="opacity:0;" data-4800="opacity:1;" data-4900="opacity:0;" data-5000="opacity:1;" data-5100="opacity:0;" data-5200="opacity:1;" data-5300="opacity:0;" data-5400="opacity:1;" data-5500="opacity:0;"></div>
@@ -186,9 +186,9 @@
 
 			<div class="cld3 pngfix" data-18000="opacity:1;bottom:-400px" data-19000="opacity:1;bottom:100px" data-19500="opacity:1;bottom:100px" data-19700="opacity:0;bottom:80px;"></div>
 
-			<!-- <div class="start pngfix" data-17700="opacity:1;bottom:-367px" data-19000="opacity:1;bottom:75px" data-19300="opacity:1;bottom:75px" data-19500="opacity:0;bottom:25px;">
+			<div class="start pngfix" data-17700="opacity:1;bottom:-367px" data-19000="opacity:1;bottom:75px" data-19300="opacity:1;bottom:75px" data-19500="opacity:0;bottom:25px;">
 				<a href="#scrolltotop"><div  class="startbtn" id="gototop"></div></a>
-			</div> -->
+			</div>
 
 			<!-- <div class="date-2001" data-18200="opacity:0;" data-18500="opacity:1;" data-19000="opacity:0;"></div> -->
 			<div class="date-2002 pngfix" data-16500="opacity:0;" data-17500="opacity:1;" data-17700="opacity:1;" data-18200="opacity:0;"></div>
@@ -228,7 +228,6 @@
 	}
 	</script>
     <![endif]-->
-
 	<script type="text/javascript">
         
         $('a[href*=#]').click(function() {
@@ -258,7 +257,7 @@
         
 		setInterval(function() {
 			
-			d2 = new Date(2014,3,9,0,0,0);
+			d2 = new Date(2014,3,8,15,0,0);
 			d1 = new Date().getTime();
 			difference = (d2-d1)/1000;
 			countdown.days 		= Math.floor(difference / (60 * 60 * 24));

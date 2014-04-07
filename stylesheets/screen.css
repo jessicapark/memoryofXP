@@ -1,4 +1,4 @@
-@charset "UTF-8";
+  @charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -23,6 +23,10 @@ time, mark, audio, video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
+}
+
+body {
+  background:#000 url(../images/bg-x.png) repeat-x;
 }
 
 /* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -80,11 +84,7 @@ body {
   font-family: Courier, 'Hiragino Sans GB', 微软雅黑, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 25px;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #17161c), color-stop(30%, #222129), color-stop(45%, #23232d), color-stop(60%, #123f67), color-stop(70%, #6e5191), color-stop(85%, #355ca4), color-stop(100%, #4598c7));
-  background: -webkit-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
-  background: -moz-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
-  background: -o-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
-  background: linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
+  overflow-x: hidden;
 }
 
 /* line 21, ../sass/screen.scss */
@@ -132,7 +132,7 @@ body {
 /* line 57, ../sass/screen.scss */
 .skrollr-mobile .skrollable {
   /*
-  	May cause issues on Android default browser (see #331 on GitHub).
+    May cause issues on Android default browser (see #331 on GitHub).
   */
   position: absolute;
 }
@@ -157,6 +157,11 @@ body {
 #container {
   width: 100%;
   height: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #17161c), color-stop(30%, #222129), color-stop(45%, #23232d), color-stop(60%, #123f67), color-stop(70%, #6e5191), color-stop(85%, #355ca4), color-stop(100%, #4598c7));
+  background-image: -webkit-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
+  background-image: -moz-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
+  background-image: -o-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
+  background-image: linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
 }
 
 /* line 83, ../sass/screen.scss */
