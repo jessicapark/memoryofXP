@@ -315,7 +315,6 @@ ul.main li {
   top: 40%;
   margin-right: 70px;
 }
-/* line 190, ../sass/screen.scss */
 .main .sp2 {
   background: url(../images/sp2.png) no-repeat;
   width: 68px;
@@ -323,7 +322,6 @@ ul.main li {
   margin-left: 30px;
   margin-top: 40px;
 }
-/* line 197, ../sass/screen.scss */
 .main .sp2machine {
   background: url(../images/sp2machine.png) no-repeat;
   width: 926px;
