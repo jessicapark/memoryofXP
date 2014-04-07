@@ -64,6 +64,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 25px;
   background: #222129;
+  min-height: 100%;
 }
 
 /* line 21, ../sass/screen.scss */
@@ -536,6 +537,13 @@ ul.main li {
 .main .date-2013 {
   background: url(../images/date-2013.png) no-repeat;
   width: 302px;
+  height: 180px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.main .date-2014 {
+  background: url(../images/date-2014.png) no-repeat;
+  width: 262px;
   height: 180px;
   margin-top: 20px;
   margin-left: 20px;
