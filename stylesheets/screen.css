@@ -404,15 +404,15 @@ ul.main li {
 /* line 267, ../sass/screen.scss */
 .main .pctg {
   background: url(../images/pctg.png) no-repeat;
+  width: 1269px;
   height: 566px;
   right: 0;
-  bottom: 0;
 }
-.main .pctg2 {
+.main .percentage2 {
   background: url(../images/pctg2.png) no-repeat;
+  width: 1269px;
   height: 566px;
   right: 0;
-  bottom: 0;
 }
 /* line 273, ../sass/screen.scss */
 .main .vista {
