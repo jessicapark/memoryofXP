@@ -112,7 +112,7 @@ body {
   display: inline-block;
   font-size: 50px;
   color: #3183e6;
-  padding: 15px;
+  padding: 15px 8px;
   border-radius: 5px;
   margin: 0px 3px 0px 7px;
 }
@@ -567,7 +567,7 @@ ul.main li {
 }
 /* line 387, ../sass/screen.scss */
 .main .bluescreen {
-  background: #2a56e7;
+  background: url(../images/blue.png) repeat;
   width: 100%;
   height: 100%;
 }
