@@ -65,6 +65,8 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 25px;
   background: #222129;
+  background: url(../images/bg2-x.png) repeat-x;
+  background-size: 100% 100%;
 }
 
 /* line 21, ../sass/screen.scss */
