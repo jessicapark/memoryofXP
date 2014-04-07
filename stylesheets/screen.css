@@ -67,7 +67,7 @@ body {
   font-size: 25px;
   background:#222129;
   overflow-x:none;
-  background: url(images/bg-x.png) repeat-x;
+  background: url(../images/bg-x.png) repeat-x;
 }
 
 /* line 21, ../sass/screen.scss */
