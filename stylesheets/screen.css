@@ -86,7 +86,6 @@ body {
   background-image: -moz-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
   background-image: -o-linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
   background-image: linear-gradient(#17161c, #222129 30%, #23232d 45%, #123f67 60%, #6e5191 70%, #355ca4 85%, #4598c7);
-  background-attachment: fixed;
 }
 
 /* line 21, ../sass/screen.scss */
